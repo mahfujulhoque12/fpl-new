@@ -24,7 +24,6 @@ interface MenuDataItem {
 const menuData: MenuDataItem[] = [
   { label: "Home", href: "/" },
   {
-  
     label: "Interiors Faculty",
     href: "/interiors-faculty",
     nestedMenu: [
@@ -50,7 +49,6 @@ const menuData: MenuDataItem[] = [
             label: "Store Room",
             href: "/interiors-faculty",
           },
-        
         ],
       },
       {
@@ -93,7 +91,6 @@ const menuData: MenuDataItem[] = [
             href: "/construction-faculty",
           },
           { label: "Hotel House", href: "/construction-faculty" },
-        
         ],
       },
       {
@@ -105,18 +102,17 @@ const menuData: MenuDataItem[] = [
       },
     ],
   },
- 
-  { label: "Furniture-Faculty", href: "#" },
 
+  { label: "Furniture-Faculty", href: "#" },
 
   { label: "FPL Updates", href: "/others-faculty" },
 
   { label: "Why FPL", href: "/why-fpl" },
+  { label: "Gallery", href: "/gallery" },
 
   { label: "About Us", href: "/about-us" },
   { label: "Blogs", href: "/blogs" },
   { label: "Contact Us", href: "/contact-us" },
-
 ];
 // Define the props for the MegaMenu component
 interface MegaMenuProps {
