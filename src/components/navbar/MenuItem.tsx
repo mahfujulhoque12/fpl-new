@@ -1,8 +1,7 @@
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import DropdownContent from "./DropdownContent";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { useRouter } from 'next/navigation';
-
+import { usePathname, useRouter } from "next/navigation";
 
 // Define types for the component props
 interface SubmenuItem {
@@ -34,7 +33,10 @@ const MenuItem: React.FC<MenuItemProps> = ({
 }) => {
   const router = useRouter();
 
+  const pathname = usePathname(); // Get the current pathname
 
+  // Corrected active check to prevent "Home" from always being active
+  const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
   const handleClick = () => {
     const activeElement = document.activeElement as HTMLElement | null;
     activeElement?.blur();
@@ -50,13 +52,12 @@ const MenuItem: React.FC<MenuItemProps> = ({
     <li>
       <div className="nav_item_content relative flex w-full justify-between border-b border-[#cacaca] h-12 lg:border-none lg:h-auto">
         <button
-          className={`${active ? "active" : ""} text-inherit w-full text-[14.5px] font-medium px-4 flex items-center lg:px-[0.7rem]`}
-          onClick={handleLinkClick} 
+          className={`${
+            isActive ? " border-b-2 border-red-600 font-semibold" : "text-black"
+          } text-inherit w-full text-[14.5px] font-medium px-4 flex items-center lg:px-[0.7rem]`}
+          onClick={handleLinkClick}
         >
-         
-          
-           {label}
-          
+          {label}
         </button>
         {nestedMenu && (
           <button
