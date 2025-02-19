@@ -17,8 +17,8 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
   const drawerButtonRef = useRef(null);
 
   return (
-    <header className="sticky top-0 left-0 z-50 h-[70px] bg-white border-b border-[#cacaca]">
-      <div className="flex items-center justify-between h-[60px] px-4">
+    <header className="sticky top-0 left-0 z-50 h-[80px] bg-white border-b border-[#cacaca]">
+      <div className="flex items-center justify-between h-[60px] px-8">
         <div className="flex items-center gap-3 md:hidden">
           <button
             ref={drawerButtonRef}
@@ -46,17 +46,19 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
             alt="logo"
             width={50}
             height={50}
-            className="h-[60px] mt-1 w-auto object-cover"
+            className="h-[60px] mt-4 w-auto object-cover "
           />
         </Link>
 
         {/* Right side: MegaMenu and UserProfile */}
         <div className="flex items-center gap-3">
-          <div className="hidden lg:block">
+          <div className="hidden lg:block mt-2">
             <MegaMenu />
           </div>
         </div>
-        <UserProfile />
+        <div className="mt-1">
+          <UserProfile />
+        </div>
         {/* Mobile navigation drawer */}
         <div className="lg:hidden absolute">
           <MobileNavigationDrawer

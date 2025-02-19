@@ -13,7 +13,7 @@ const ContactBtn = () => {
   };
 
   return (
-    <div className="fixed bottom-20 left-0 sm:left-10 z-50">
+    <div className="fixed bottom-20 left-2 sm:left-10 z-50">
       <div className="flex flex-col  items-center">
         {/* Phone Call Button with Hover Number */}
         <div className="relative group">
@@ -24,7 +24,7 @@ const ContactBtn = () => {
             className="bg-white text-sky-500 transition-transform duration-300 hover:scale-110 rounded-md"
             onClick={() => window.open(`tel:${callNumber}`)}
           >
-            <FaPhoneSquare className="w-8 h-8 sm:w-12 sm:h-12" />
+            <FaPhoneSquare className="w-9 h-9 sm:w-12 sm:h-12" />
           </button>
         </div>
 
@@ -34,10 +34,10 @@ const ContactBtn = () => {
             {phoneNumber}
           </p>
           <button
-            className="bg-white text-green-500 transition-transform duration-300 hover:scale-110 rounded-md"
+            className="bg-white  text-green-500 transition-transform duration-300 hover:scale-110 rounded-md"
             onClick={handleClick}
           >
-            <FaWhatsappSquare className="w-8 h-8 sm:w-12 sm:h-12" />
+            <FaWhatsappSquare className="w-9 h-9 sm:w-12 sm:h-12" />
           </button>
         </div>
       </div>
