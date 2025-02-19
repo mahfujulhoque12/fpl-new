@@ -27,22 +27,22 @@ const cardData: CardData[] = [
   {
     id: 1,
     imageUrl: other1.src,
-    des: "You can choise your dream house from here. we can bulid your dream house at minimun cost",
+    des: "A masterpiece of modern architecture, where elegance meets functionality in every detail. Every corner is designed with precision to enhance both aesthetics and practicality. This home is a true reflection of contemporary luxury.",
   },
   {
     id: 2,
     imageUrl: other2.src,
-    des: "You can choise your dream house from here. we can bulid your dream house at minimun cost",
+    des: "Blending innovation with timeless design, this home redefines luxury living. The seamless integration of space and light creates a warm yet sophisticated atmosphere. Experience a perfect balance of style and comfort in every room.",
   },
   {
     id: 3,
     imageUrl: other3.src,
-    des: "You can choise your dream house from here. we can bulid your dream house at minimun cost",
+    des: "Designed to inspire, this architectural gem harmonizes nature and contemporary style. Large glass windows invite natural light, creating a bright and airy ambiance. Every space is thoughtfully crafted to complement both beauty and function.",
   },
   {
     id: 4,
     imageUrl: other4.src,
-    des: "You can choise your dream house from here. we can bulid your dream house at minimun cost",
+    des: "A seamless fusion of space, light, and sophistication for the perfect living experience. High ceilings and open layouts create an inviting atmosphere. This house is a modern sanctuary built for both relaxation and elegance",
   },
 ];
 
@@ -61,18 +61,18 @@ const OthersPic = () => {
                 className="basis-full sm:basis-1/2 lg:basis-1/3"
               >
                 <Link href="/cotesion">
-                <div className="border p-4 shadow-md  mb-2 rounded-lg hover:scale-[102%] transition translate duration-500 h-full flex flex-col">
-                  <Image
-                    src={card.imageUrl as string}
-                    width={700}
-                    height={300}
-                    alt="village"
-                    className="rounded-md h-[200px] object-cover"
-                  />
-                  <p className="text-sm py-2">{card.des}</p>
+                  <div className="border p-4 shadow-md  mb-2 rounded-lg hover:scale-[102%] transition translate duration-500 h-full flex flex-col">
+                    <Image
+                      src={card.imageUrl as string}
+                      width={700}
+                      height={300}
+                      alt="village"
+                      className="rounded-md h-[200px] object-cover"
+                    />
+                    <p className="text-sm py-2">{card.des}</p>
 
-                  <div className="flex  justify-start w-full"></div>
-                </div>
+                    <div className="flex  justify-start w-full"></div>
+                  </div>
                 </Link>
               </CarouselItem>
             ))}

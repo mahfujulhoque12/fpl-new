@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navigation from "@/components/navbar/Navigation";
 import Footer from "@/components/section/Footer";
+import ContactBtn from "@/components/ContactBtn";
 
 export const metadata: Metadata = {
   title: "Your Fpl",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <Navigation />
 
+        <ContactBtn />
         {children}
         <Footer />
       </body>
