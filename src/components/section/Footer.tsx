@@ -120,7 +120,7 @@ const Footer: React.FC = () => {
                   <MdEmail size={25} className="text-gray-100" />
                   info.yourfpl@gmail.com
                 </li>
-                <li className="flex ms-1 gap-2 items-start text-normal text-gray-100">
+                <li className="flex  gap-2 items-start text-normal text-gray-100">
                   <FaLocationDot size={30} className="text-gray-100" />
                   House # Ma-33/C/1, Basic Lake View (3rd Floor) <br />{" "}
                   Hatirjheel Badda Lake View Road <br /> Dhaka-1212, Bangladesh

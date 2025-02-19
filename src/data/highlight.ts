@@ -1,65 +1,63 @@
+import high1 from "/public/high/high1.png";
+import high2 from "/public/high/high2.png";
+import high3 from "/public/high/high3.png";
+import high4 from "/public/high/high4.png";
+import high5 from "/public/high/high5.png";
+import high6 from "/public/high/high6.png";
+import high7 from "/public/high/high7.png";
+import high8 from "/public/high/high8.png";
+import high9 from "/public/high/high9.png";
+import high10 from "/public/high/high10.png";
+import high11 from "/public/high/high11.png";
 
-import high1 from '/public/high/high1.png'
-import high2 from '/public/high/high2.png'
-import high3 from '/public/high/high3.png'
-import high4 from '/public/high/high4.png'
-import high5 from '/public/high/high5.png'
-import high6 from '/public/high/high6.png'
-import high7 from '/public/high/high7.png'
-import high8 from '/public/high/high8.png'
-import high9 from '/public/high/high9.png'
-import high10 from '/public/high/high10.png'
-import high11 from '/public/high/high11.png'
+import high13 from "/public/high/high13.png";
+import high14 from "/public/high/high14.png";
+import high15 from "/public/high/high15.png";
+import high16 from "/public/high/high16.png";
 
-import high13 from '/public/high/high13.png'
-import high14 from '/public/high/high14.png'
-import high15 from '/public/high/high15.png'
-import high16 from '/public/high/high16.png'
+import hotel1 from "/public/high/hotel1.png";
+import hotel2 from "/public/high/hotel2.png";
+import hotel3 from "/public/high/hotel3.png";
+import hotel4 from "/public/high/hotel4.png";
+import hotel5 from "/public/high/hotel5.png";
 
-import hotel1 from '/public/high/hotel1.png'
-import hotel2 from '/public/high/hotel2.png'
-import hotel3 from '/public/high/hotel3.png'
-import hotel4 from '/public/high/hotel4.png'
-import hotel5 from '/public/high/hotel5.png'
+type CardData = {
+  id: number;
+  slug: string;
+  imageUrl: string;
+  title: string;
+  des: string;
+  price?: string;
+  type?: string;
+  completeDate?: string;
+  companyInfo?: string;
+  oldPrice?: string;
+  feature?: string;
+  allImageUrl?: string[];
+  sustainabilityFeatures?: string;
+  caseStudies?: string;
+  floorPlans?: string;
+  designFeatures?: string;
+  titleTwo: string;
+  desTwo: string;
+};
 
+const createSlug = (title: string): string =>
+  title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 
-
- type CardData = {
-    id: number;
-    slug: string;
-    imageUrl: string;
-    title: string;
-    des: string;
-    price?: string;
-    type?: string;
-    completeDate?: string;
-    companyInfo?: string;
-    oldPrice?: string;
-    feature?: string;
-    allImageUrl?: string[];
-    sustainabilityFeatures?: string;
-    caseStudies?: string;
-    floorPlans?: string;
-    designFeatures?: string;
-    titleTwo:string;
-    desTwo:string,
-  };
-    
-    const createSlug = (title: string): string =>
-      title
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-
-        
 export const cardData: CardData[] = [
   {
-      id:1,
-      imageUrl:hotel3.src,
-      slug:createSlug("False Ceiling Cost in Kolkata: Designs, Materials and Inspirations"),
-      title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
-      des: " Anusha Kulal | September 20, 2024",
-      oldPrice: "$2000",
+    id: 1,
+    imageUrl: hotel3.src,
+    slug: createSlug(
+      "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations"
+    ),
+    title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
+    des: " Anusha Kulal | September 20, 2024",
+    oldPrice: "$2000",
     price: "$1000",
     type: "House",
     completeDate: "1 Month",
@@ -82,24 +80,26 @@ export const cardData: CardData[] = [
 
     floorPlans:
       "Our thoughtfully designed floor plans offer a clear and detailed view of the spatial layout, allowing you to explore the flow and functionality of each area. Carefully crafted to maximize space efficiency and comfort, our plans balance open-concept designs with purposeful divisions to create versatile living or working environments. Whether you're looking for expansive open spaces or intimate, cozy corners, our floor plans provide a flexible foundation to meet your unique needs, ensuring a seamless experience from concept to completion.",
-      titleTwo:"That is our most valuable projects",
-      desTwo:"click the image and check all the assets. so let's check it out",
+    titleTwo: "That is our most valuable projects",
+    desTwo:
+      "Where visionary design meets the warmth of home, creating an unparalleled living space. The architecture embraces bold lines, rich textures, and innovative details. It's not just a house—it’s a statement of refined living.",
 
     caseStudies:
       "Our case studies highlight the journey behind some of our most successful projects, offering a detailed look at the challenges faced, creative solutions implemented, and the results achieved. Each case study explores the unique client needs, site constraints, and design objectives that shaped the final outcome, demonstrating our ability to deliver innovative, tailored solutions. From sustainable architecture to complex structural designs, these examples showcase our commitment to excellence and our expertise in turning architectural visions into reality.",
 
     sustainabilityFeatures:
       "At Floor Planer, sustainability is at the heart of our design approach. We prioritize eco-friendly materials, energy-efficient systems, and green building practices to minimize the environmental impact of our projects. By integrating features such as solar panels, rainwater harvesting systems, and natural ventilation, we ensure that our buildings not only reduce energy consumption but also promote healthier living environments. Our commitment to sustainability extends to every stage of the design process, from the selection of renewable materials to the implementation of smart technologies that support a more sustainable future.",
-      
   },
 
   {
-      id:2,
-      imageUrl:high10.src, 
-      slug:createSlug("False Ceiling Cost in Kolkata: Designs, Materials and Inspirations ff"),
-      title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
-      des: " Anusha Kulal | September 20, 2024",
-      oldPrice: "$2000",
+    id: 2,
+    imageUrl: high10.src,
+    slug: createSlug(
+      "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations ff"
+    ),
+    title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
+    des: " Anusha Kulal | September 20, 2024",
+    oldPrice: "$2000",
     price: "$1000",
     type: "House",
     completeDate: "1 Month",
@@ -128,17 +128,19 @@ export const cardData: CardData[] = [
 
     sustainabilityFeatures:
       "At Floor Planer, sustainability is at the heart of our design approach. We prioritize eco-friendly materials, energy-efficient systems, and green building practices to minimize the environmental impact of our projects. By integrating features such as solar panels, rainwater harvesting systems, and natural ventilation, we ensure that our buildings not only reduce energy consumption but also promote healthier living environments. Our commitment to sustainability extends to every stage of the design process, from the selection of renewable materials to the implementation of smart technologies that support a more sustainable future.",
-      titleTwo:"That is our most valuable projects",
-      desTwo:"click the image and check all the assets. so let's check it out",
-      
+    titleTwo: "That is our most valuable projects",
+    desTwo:
+      "Crafted with precision, this architectural beauty transforms dreams into reality. The carefully curated materials and intricate designs bring life to every detail. A perfect blend of artistry and modern comfort awaits you",
   },
   {
-      id:3,
-      imageUrl:high13.src,
-      slug:createSlug("False Ceiling Cost in Kolkata: Designs, Materials and Inspirations ds"),
-      title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
-      des: " Anusha Kulal | September 20, 2024",
-      oldPrice: "$2000",
+    id: 3,
+    imageUrl: high13.src,
+    slug: createSlug(
+      "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations ds"
+    ),
+    title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
+    des: " Anusha Kulal | September 20, 2024",
+    oldPrice: "$2000",
     price: "$1000",
     type: "House",
     completeDate: "1 Month",
@@ -164,19 +166,22 @@ export const cardData: CardData[] = [
 
     caseStudies:
       "Our case studies highlight the journey behind some of our most successful projects, offering a detailed look at the challenges faced, creative solutions implemented, and the results achieved. Each case study explores the unique client needs, site constraints, and design objectives that shaped the final outcome, demonstrating our ability to deliver innovative, tailored solutions. From sustainable architecture to complex structural designs, these examples showcase our commitment to excellence and our expertise in turning architectural visions into reality.",
-      titleTwo:"That is our most valuable projects",
-      desTwo:"click the image and check all the assets. so let's check it out",
+    titleTwo: "That is our most valuable projects",
+    desTwo:
+      "Experience the perfect balance of artistry and comfort in this stunning modern home. Every element, from the open floor plan to the elegant finishes, exudes sophistication. This is where dreams meet architectural excellence.",
 
     sustainabilityFeatures:
       "At Floor Planer, sustainability is at the heart of our design approach. We prioritize eco-friendly materials, energy-efficient systems, and green building practices to minimize the environmental impact of our projects. By integrating features such as solar panels, rainwater harvesting systems, and natural ventilation, we ensure that our buildings not only reduce energy consumption but also promote healthier living environments. Our commitment to sustainability extends to every stage of the design process, from the selection of renewable materials to the implementation of smart technologies that support a more sustainable future.",
   },
   {
-      id:4,
-      imageUrl:high2.src,
-      slug:createSlug("False Ceiling Cost in Kolkata: Designs, Materials and Inspirations tf"),
-      title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
-      des: " Anusha Kulal | September 20, 2024",
-      oldPrice: "$2000",
+    id: 4,
+    imageUrl: high2.src,
+    slug: createSlug(
+      "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations tf"
+    ),
+    title: "False Ceiling Cost in Kolkata: Designs, Materials and Inspirations",
+    des: " Anusha Kulal | September 20, 2024",
+    oldPrice: "$2000",
     price: "$1000",
     type: "House",
     completeDate: "1 Month",
@@ -205,8 +210,8 @@ export const cardData: CardData[] = [
 
     sustainabilityFeatures:
       "At Floor Planer, sustainability is at the heart of our design approach. We prioritize eco-friendly materials, energy-efficient systems, and green building practices to minimize the environmental impact of our projects. By integrating features such as solar panels, rainwater harvesting systems, and natural ventilation, we ensure that our buildings not only reduce energy consumption but also promote healthier living environments. Our commitment to sustainability extends to every stage of the design process, from the selection of renewable materials to the implementation of smart technologies that support a more sustainable future.",
-      titleTwo:"That is our most valuable projects",
-      desTwo:"click the image and check all the assets. so let's check it out",
+    titleTwo: "That is our most valuable projects",
+    desTwo:
+      "Bold lines, open spaces, and exquisite details make this house a true architectural icon. Designed for those who appreciate both form and function, it stands as a symbol of modern elegance. Each space is a testament to contemporary craftsmanship",
   },
- 
-]
+];

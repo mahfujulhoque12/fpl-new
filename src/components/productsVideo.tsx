@@ -13,10 +13,6 @@ import {
 import { IoClose } from "react-icons/io5";
 import { FaPlay } from "react-icons/fa6";
 
-
-
-
-
 // Define the video data type
 type VideoData = {
   url: string;
@@ -25,20 +21,23 @@ type VideoData = {
 
 const videoData: VideoData[] = [
   {
-    url: "https://www.youtube.com/embed/m55PTVUrlnA",
-    thumbnail: "/blog/blog2.png",
+    url: "https://www.youtube.com/embed/tKjvVf0a50c",
+
+    thumbnail: "/thumb/thumb1.png",
   },
   {
-    url: "https://www.youtube.com/embed/JblrN5oNse4",
-    thumbnail:"/blog/blog3.png",
+    url: "https://www.youtube.com/embed/w4BW5YqaKl0",
+    thumbnail: "/thumb/thumb2.png",
   },
   {
-    url: "https://www.youtube.com/embed/bNnhr_bIR9c",
-    thumbnail: "/blog/blog4.png",
+    url: "https://www.youtube.com/embed/hzYtcVlgk5I",
+    thumbnail: "/thumb/thumb3.png",
   },
+
   {
-    url: "https://www.youtube.com/embed/WlxcujsvcIY?start=839",
-    thumbnail: "/blog/blog5.png",
+    url: "https://www.youtube.com/embed/p6tdaNAH-qQ",
+
+    thumbnail: "/thumb/thumb4.png",
   },
 ];
 
@@ -78,12 +77,9 @@ const ProductsVideo: React.FC = () => {
                     height={300}
                     className="rounded-md object-cover h-[300px]"
                   />
-                 <div className="absolute top-[45%] left-[45%] w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
-                <FaPlay className="text-white" size={24} />
-
-              </div>
-
-
+                  <div className="absolute top-[45%] left-[45%] w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                    <FaPlay className="text-white" size={24} />
+                  </div>
                 </div>
               </CarouselItem>
             ))}
