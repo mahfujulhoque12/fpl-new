@@ -46,10 +46,11 @@ const ContactForm = () => {
               we’ll respond within 24 hours.
             </p>
 
-            <div className="flex items-center mt-28 gap-2">
-              <RiHome3Fill size={26} className="text-gray-100 mt-[-16px]" />
+            <div className="flex items-start mt-28 gap-2">
+              <RiHome3Fill size={26} className="text-gray-100 " />
               <p className=" text-base font-normal text-gray-100 w-[300px]">
-              House # 29 (8th Floor), Block - A, Aftabnaga Main Road, Dhaka - 1219.
+                House # Ma-33/C/1, Basic Lake View (3rd Floor) <br /> Hatirjheel
+                Badda Lake View Road <br /> Dhaka-1212, Bangladesh
               </p>
             </div>
             <p className=" text-base font-normal text-gray-100 w-[300px] mt-4 flex items-center  gap-2">
@@ -63,7 +64,6 @@ const ContactForm = () => {
               <TiMessages size={25} />
               info.yourfpl@gmail.com
             </p>
-
 
             <div className="text-gray-100 mt-28 flex gap-3">
               <Link href="#">
