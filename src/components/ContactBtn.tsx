@@ -24,7 +24,7 @@ const ContactBtn = () => {
             className="bg-white text-sky-500 transition-transform duration-300 hover:scale-110 rounded-md"
             onClick={() => window.open(`tel:${callNumber}`)}
           >
-            <FaPhoneSquare size={50} />
+            <FaPhoneSquare className="w-8 h-8 sm:w-12 sm:h-12" />
           </button>
         </div>
 
@@ -37,7 +37,7 @@ const ContactBtn = () => {
             className="bg-white text-green-500 transition-transform duration-300 hover:scale-110 rounded-md"
             onClick={handleClick}
           >
-            <FaWhatsappSquare size={50} />
+            <FaWhatsappSquare className="w-8 h-8 sm:w-12 sm:h-12" />
           </button>
         </div>
       </div>
