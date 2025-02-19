@@ -5,7 +5,7 @@ import MainHeading from "@/components/typography/MainHeading";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import { Button } from "@/components/ui/button";
 import Paragraph from "@/components/typography/Paragraph";
-import Link from 'next/link';
+import Link from "next/link";
 
 interface Slide {
   id: number;
@@ -20,21 +20,24 @@ const slides: Slide[] = [
     id: 1,
     imageUrl: "https://wallpapercave.com/wp/wp11265278.jpg",
     title: "Crafting Architectural Masterpieces for Modern Living",
-    description: "We design sophisticated, practical spaces tailored to modern lifestyles",
+    description:
+      "We design sophisticated, practical spaces tailored to modern lifestyles",
     action: "Book Free Consultation",
   },
   {
     id: 2,
     imageUrl: "https://wallpapercave.com/wp/wp11265359.jpg",
     title: "Where Vision Meets Precision in Architecture",
-    description: "With precision and detail, we turn your vision into architectural reality.",
+    description:
+      "With precision and detail, we turn your vision into architectural reality.",
     action: "Calculate Now",
   },
   {
     id: 3,
     imageUrl: "https://wallpapercave.com/wp/wp11265342.jpg",
     title: "Designing Spaces that Define Lifestyle",
-    description: "Our designs reflect your lifestyle, adding personality to every space.",
+    description:
+      "Our designs reflect your lifestyle, adding personality to every space.",
     action: "Visit Us",
   },
 ];
@@ -75,8 +78,11 @@ const HeroSlider: React.FC = () => {
               <MainHeading className="mb-5 font-bold uppercase w-full md:w-3/6 mx-auto text-center">
                 {slide.title}
               </MainHeading>
-              <Paragraph className="mb-4">{slide.description}</Paragraph>
-              <Link href="/cotesion"
+              <Paragraph className="mb-4 px-10 sm:px-0 ms-6 sm:ms-0">
+                {slide.description}
+              </Paragraph>
+              <Link
+                href="/cotesion"
                 className="font-semibold bg-red-600 transition duration-150 hover:bg-red-700 rounded-[27px] px-4 py-2  uppercase"
               >
                 {slide.action}
@@ -87,7 +93,6 @@ const HeroSlider: React.FC = () => {
 
         {/* Navigation Controls */}
         <Button
-        
           className="rounded-full bg-gray-100 text-dark hover:text-white hover:bg-[#c13136] absolute left-4 top-1/2 transform -translate-y-1/2 text-2xl flex items-center justify-center"
           size="icon"
           onClick={prevSlide}
