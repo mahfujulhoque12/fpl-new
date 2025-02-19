@@ -36,11 +36,10 @@ import renovations6 from "/public/shopCard/renovations6.png";
     imageUrl?: string;
     title: string;
     des: string;
-    price?: string;
     type?: string;
     completeDate?: string;
     companyInfo?: string;
-    oldPrice?: string;
+    
     feature?: string;
     allImageUrl?: string[];
     sustainabilityFeatures?: string;
@@ -62,8 +61,7 @@ export const cardData: CardData[] = [
     title: "Modular Interiors",
     des:"Transform your space with modular interiors that blend style and adaptability. Our designs offer flexibility and functionality, perfect for both modern homes and offices.",
     imageUrl: Shop1.src,
-    oldPrice: "$2000",
-    price: "$1000",
+    
     type: "House",
     completeDate: "1 Month",
 
@@ -98,8 +96,7 @@ export const cardData: CardData[] = [
     title: "Luxury Interiors",
     des:"Indulge in the elegance of luxury interiors that redefine sophistication. Our designs combine high-end materials and exquisite craftsmanship to create spaces that exude opulence and comfort.",
     imageUrl: Shop3.src,
-    oldPrice: "$2000",
-    price: "$1000",
+    
     type: "House",
     completeDate: "1 Month",
 
@@ -134,8 +131,7 @@ export const cardData: CardData[] = [
     title: "Renovations",
     des:"Revitalize your space with expert renovations that blend modern design with timeless appeal. Whether upgrading a single room or transforming your entire home, we bring new life to your existing spaces",
     imageUrl: Shop4.src,
-    oldPrice: "$2000",
-    price: "$1000",
+    
     type: "House",
     completeDate: "1 Month",
 

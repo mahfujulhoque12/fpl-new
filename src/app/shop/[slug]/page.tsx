@@ -112,10 +112,7 @@ const Page: FC<PageProps> = ({ params }) => {
             <p className="text-gray-600 text-base mt-1">
               <b>Description:</b> {allInfo?.des}
             </p>
-            <p className="text-gray-600 text-base mt-1">
-              <b>Price:</b> {allInfo?.price}{" "}
-              <del className="text-red-600">{allInfo?.oldPrice}</del>
-            </p>
+
             <p className="text-gray-600 text-base mt-1">
               <b>Category:</b> {allInfo?.type}
             </p>
