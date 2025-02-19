@@ -87,7 +87,7 @@ const cardData: CardData[] = [
     id: 11,
     imageUrl: man11.src,
     name: "Md Nazmul Hassan",
-    title: "Sr. Exclusive, sales & marketing ",
+    title: "Sr. Executive, sales & marketing ",
   },
   {
     id: 12,
