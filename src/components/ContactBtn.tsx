@@ -4,7 +4,7 @@ import React from "react";
 import { FaWhatsappSquare } from "react-icons/fa";
 
 const ContactBtn = () => {
-  const phoneNumber = "01896088860"; // Replace with your actual number
+  const phoneNumber = "+8801896088860"; // Replace with your actual number
 
   const handleClick = () => {
     const whatsappUrl = `https://wa.me/${phoneNumber}`;
