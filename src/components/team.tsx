@@ -98,7 +98,7 @@ const cardData: CardData[] = [
   {
     id: 13,
     imageUrl: man13.src,
-    name: "Ms Rubaya Sultana Piya.jpg",
+    name: "Ms Rubaya Sultana Piya",
     title: "Assistant Manager, Accounts",
   },
 ];
