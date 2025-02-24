@@ -15,6 +15,7 @@ import man10 from "/public/team/Hafij.jpg";
 import man11 from "/public/team/Nazmul Hassan.jpg";
 import man12 from "/public/team/Afnan.jpg";
 import man13 from "/public/team/Ms Rubaya Sultana Piya.jpg";
+import man14 from "/public/team/nadia.png";
 
 type CardData = {
   id: number;
@@ -100,6 +101,12 @@ const cardData: CardData[] = [
     imageUrl: man13.src,
     name: "Ms Rubaya Sultana Piya",
     title: "Assistant Manager, Accounts",
+  },
+  {
+    id: 14,
+    imageUrl: man14.src,
+    name: "Nadia Hasan",
+    title: "Sr. Executive,CRM",
   },
 ];
 
