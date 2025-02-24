@@ -75,7 +75,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <div
           role="menu"
           className={`dropdown bg-white lg:absolute lg:left-0 lg:top-[60px] lg:w-full lg:border-b lg:border-[#cacaca)] lg:rounded-b-[16px] lg:pt-8 lg:pb-8 lg:invisible lg:z-10 ${
-            active ? "h-auto" : "h-0 overflow-hidden md:h-auto"
+            active ? "h-auto" : "h-0 overflow-hidden lg:h-auto"
           }`}
         >
           <MaxWidthWrapper>

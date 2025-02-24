@@ -60,7 +60,7 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
           <UserProfile />
         </div>
         {/* Mobile navigation drawer */}
-        <div className="xl:hidden absolute">
+        <div className="lg:hidden absolute">
           <MobileNavigationDrawer
             {...{
               isDrawerOpen,
