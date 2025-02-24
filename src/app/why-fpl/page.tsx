@@ -8,10 +8,10 @@ const page = () => {
   return (
     <div>
       <WhyFpl />
+      <Cabinet />
       <WhyChoseUs />
       <Investor />
       <WhyPartnerWithus />
-      <Cabinet />
     </div>
   );
 };

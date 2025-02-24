@@ -4,17 +4,16 @@ import MoreVideo from "@/components/moreVideo";
 import RecentProducts from "@/components/recentProducts";
 import WorkHightlight from "@/components/workHightlight";
 
-
-const page = () =>{
-    return(
-        <div>
-            <OthersPic/>
-            <MoreReview/>
-            <MoreVideo/>
-            <RecentProducts/>
-            <WorkHightlight/>
-        </div>
-    )
-}
+const page = () => {
+  return (
+    <div>
+      <OthersPic />
+      <MoreReview />
+      <WorkHightlight />
+      <MoreVideo />
+      <RecentProducts />
+    </div>
+  );
+};
 
 export default page;

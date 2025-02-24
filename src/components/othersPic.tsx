@@ -51,7 +51,7 @@ const OthersPic = () => {
     <section className="py-10 md:py-15">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase mb-10">
-          There are losts off sample here
+          Some Recent Project
         </SubHeading>
         <Carousel>
           <CarouselContent>
