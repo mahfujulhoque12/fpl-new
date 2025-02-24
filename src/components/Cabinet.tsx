@@ -10,7 +10,7 @@ const Cabinet = () => {
     <section className="py-5 md:py-10">
       <MaxWidthWrapper>
         <div className="flex items-center justify-center">
-          <Image src={tropy} alt="tropy" width={1200} height={400} />
+          <Image src={tropy} alt="tropy" width={1000} height={400} />
         </div>
       </MaxWidthWrapper>
     </section>

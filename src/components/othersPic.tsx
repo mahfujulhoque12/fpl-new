@@ -12,10 +12,10 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-import other1 from "/public/others/others1.png";
-import other2 from "/public/others/others2.png";
-import other3 from "/public/others/others3.png";
-import other4 from "/public/others/others4.png";
+import other1 from "/public/others/5.png";
+import other2 from "/public/others/2.png";
+import other3 from "/public/others/3.png";
+import other4 from "/public/others/4.png";
 import Link from "next/link";
 
 type CardData = {

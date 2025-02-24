@@ -19,7 +19,7 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
   return (
     <header className="sticky top-0 left-0 z-50 h-[80px] bg-white border-b border-[#cacaca]">
       <div className="flex items-center justify-between h-[60px] px-8">
-        <div className="flex items-center gap-3 md:hidden">
+        <div className="flex items-center gap-3 xl:hidden">
           <button
             ref={drawerButtonRef}
             className="border-none h-[45px] w-[45px] bg-transparent"
@@ -52,7 +52,7 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
 
         {/* Right side: MegaMenu and UserProfile */}
         <div className="flex items-center gap-3">
-          <div className="hidden lg:block mt-2">
+          <div className="hidden xl:block mt-2">
             <MegaMenu />
           </div>
         </div>
@@ -60,7 +60,7 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
           <UserProfile />
         </div>
         {/* Mobile navigation drawer */}
-        <div className="lg:hidden absolute">
+        <div className="xl:hidden absolute">
           <MobileNavigationDrawer
             {...{
               isDrawerOpen,

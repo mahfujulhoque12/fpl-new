@@ -8,7 +8,7 @@ const Investor = () => {
     <section className="py-5 md:py-10">
       <MaxWidthWrapper>
         <div className="flex items-center justify-center">
-          <Image src={investor} alt="img" width={1200} height={400} />
+          <Image src={investor} alt="img" width={1000} height={400} />
         </div>
       </MaxWidthWrapper>
     </section>
