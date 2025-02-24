@@ -51,7 +51,7 @@ const cardData: CardData[] = [
     id: 5,
     imageUrl: man5.src,
     name: "Tareq Rahman Bhuiyan",
-    title: "Assistan Manager",
+    title: "Assistant Manager",
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ const cardData: CardData[] = [
     id: 9,
     imageUrl: man9.src,
     name: "Md Rafiq Islam",
-    title: "Project Engineer",
+    title: " Senior Manager, HR & Admin",
   },
   {
     id: 10,
