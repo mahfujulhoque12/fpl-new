@@ -24,7 +24,7 @@ interface MenuDataItem {
 const menuData: MenuDataItem[] = [
   { label: "Home", href: "/" },
   {
-    label: "Interiors Faculty",
+    label: "Interiors",
     href: "/interiors-faculty",
     nestedMenu: [
       {
@@ -68,7 +68,7 @@ const menuData: MenuDataItem[] = [
     ],
   },
   {
-    label: "Construction Faculty",
+    label: "Construction",
     href: "/construction-faculty",
     nestedMenu: [
       {
@@ -85,32 +85,32 @@ const menuData: MenuDataItem[] = [
       {
         heading: "Construction",
         submenu: [
-          { label: "Multi Storied House", href: "/construction-faculty" },
+          { label: "Multi Storied House", href: "/construction" },
           {
             label: "Resort",
             href: "/construction-faculty",
           },
-          { label: "Hotel House", href: "/construction-faculty" },
+          { label: "Hotel House", href: "/construction" },
         ],
       },
       {
         heading: "Construction",
         submenu: [
-          { label: "Bulding Ranovation", href: "/construction-faculty" },
+          { label: "Bulding Ranovation", href: "/construction" },
           { label: "Bulding Ranovation", href: "/construction-faculty" },
         ],
       },
     ],
   },
 
-  { label: "FPL Updates", href: "/others-faculty" },
+  { label: "FPL\u00A0Updates", href: "/others-faculty" },
 
-  { label: "Why FPL", href: "/why-fpl" },
+  { label: "Why\u00A0FPL", href: "/why-fpl" },
   { label: "Gallery", href: "/gallery" },
 
-  { label: "About Us", href: "/about-us" },
+  { label: "About\u00A0Us", href: "/about-us" },
   { label: "Blogs", href: "/blogs" },
-  { label: "Contact Us", href: "/contact-us" },
+  { label: "Contact\u00A0Us", href: "/contact-us" },
 ];
 // Define the props for the MegaMenu component
 interface MegaMenuProps {
