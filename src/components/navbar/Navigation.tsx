@@ -43,7 +43,7 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
         <Link href="/" className="hidden md:block">
           <Image
             src={mobileLogo}
-            alt="logo"
+            alt="logo mbl"
             width={200}
             height={200}
             className="h-[70px] mt-4 w-[80px] object-cover "
