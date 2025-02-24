@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import Image from "next/image";
-import logo from "/public/fbl-logo-with-title.png";
+import logo from "/public/footer/footer1.png";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -13,7 +13,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
-    <footer className=" bg-[#c13136] text-black footer_">
+    <footer className=" bg-[#000000] text-black footer_">
       <div className="py-16">
         <MaxWidthWrapper>
           <div className="flex flex-wrap -mx-4 mb-8">
@@ -130,7 +130,7 @@ const Footer: React.FC = () => {
           </div>
         </MaxWidthWrapper>
       </div>
-      <div className="bg-red-600 text-white py-5">
+      <div className="bg-[#1d1c1c] text-white py-5">
         <MaxWidthWrapper>
           <div className="flex flex-col gap-3 md:flex-row justify-between">
             <div>

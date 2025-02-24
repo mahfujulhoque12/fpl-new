@@ -103,8 +103,6 @@ const menuData: MenuDataItem[] = [
     ],
   },
 
-  { label: "Furniture-Faculty", href: "#" },
-
   { label: "FPL Updates", href: "/others-faculty" },
 
   { label: "Why FPL", href: "/why-fpl" },
