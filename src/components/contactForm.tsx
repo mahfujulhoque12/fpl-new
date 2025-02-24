@@ -33,7 +33,7 @@ const ContactForm = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 bg-white shadow-sm p-4 rounded-xl">
-          <div className="bg-gradient-to-t from-[#3528C5] to-[#7367F0]  p-6 rounded-lg relative">
+          <div className="bg-gradient-to-t from-[#757480] to-[#25233a]  p-6 rounded-lg relative">
             <p className="font-semibold text-xs	uppercase  flex items-center text-gray-100 gap-2">
               Message now <FaPaperPlane className="text-[#60D66A]" />
             </p>
@@ -88,7 +88,7 @@ const ContactForm = () => {
               width={200}
               height={200}
               alt="image"
-              className="absolute bottom-0 right-0 w-[80px] h-[80px] md:w-[180px] md:h-[180px]"
+              className="absolute bottom-0 right-0 w-[80px] h-[80px] md:w-[180px] md:h-[180px] object-contain"
             />
           </div>
 
