@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import Link from "next/link";
-import mobileLogo from "/public/fbl-logo.png";
+import mobileLogo from "/public/footer/footer1.png";
 import UserProfile from "./UserProfile";
 import { AlignJustify } from "lucide-react";
 import MegaMenu from "@/components/navbar/MegaMenu";
@@ -32,9 +32,9 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
             <Image
               src={mobileLogo}
               alt="logo"
-              width={40}
-              height={30}
-              className="h-[30px] w-[30px]"
+              width={500}
+              height={500}
+              className="h-[50px] w-[50px] object-contain"
             />
           </Link>
         </div>
@@ -44,9 +44,9 @@ const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
           <Image
             src={mobileLogo}
             alt="logo"
-            width={50}
-            height={50}
-            className="h-[60px] mt-4 w-auto object-cover "
+            width={200}
+            height={200}
+            className="h-[70px] mt-4 w-[80px] object-cover "
           />
         </Link>
 
