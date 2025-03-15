@@ -60,7 +60,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 flex items-center justify-center">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
-                    see more image
+                    see project details
                   </span>
                 </div>
               </button>
