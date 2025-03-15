@@ -19,7 +19,7 @@ const page: React.FC<ParamsProps> = ({ params }) => {
     <MaxWidthWrapper>
       <div className="">
         <SubHeading className="font-bold text-center uppercase my-10">
-          All Projects
+          Project Details
         </SubHeading>
         {/* Row 1: Images 1 and 2 */}
         <div className="flex flex-col sm:flex-row  gap-5 mt-10">
