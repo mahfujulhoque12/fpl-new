@@ -106,6 +106,8 @@ const menuData: MenuDataItem[] = [
   { label: "FPL\u00A0Updates", href: "/others-faculty" },
 
   { label: "Why\u00A0FPL", href: "/why-fpl" },
+  { label: "Portfolio", href: "/portfolio" },
+
   { label: "Gallery", href: "/gallery" },
 
   { label: "About\u00A0Us", href: "/about-us" },
