@@ -1,5 +1,5 @@
 "use client";
-import { FC, useState } from "react";
+import { useState } from "react";
 import { cardData } from "@/data/blogData";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import Link from "next/link";
