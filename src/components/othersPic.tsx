@@ -67,7 +67,7 @@ const OthersPic = () => {
                       width={700}
                       height={300}
                       alt="village"
-                      className="rounded-md h-[200px] object-cover"
+                      className="rounded-md h-[230px]"
                     />
                     <p className="text-sm py-2">{card.des}</p>
 

@@ -25,13 +25,13 @@ const Portfolio = () => {
           Our Portfolio
         </SubHeading>
 
-        <div className="flex items-center gap-4 my-6">
+        <div className="flex items-center justify-center gap-4 my-6">
           {["all", "interior", "construction"].map((filter) => (
             <button
               key={filter}
               className={`px-4 py-2 rounded-md ${
                 activeFilter === filter
-                  ? "bg-[#C13136] text-white"
+                  ? "bg-black text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               } transition-colors duration-200`}
               onClick={() => setActiveFilter(filter)}

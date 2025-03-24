@@ -9,6 +9,8 @@ const Investor = () => {
       <MaxWidthWrapper>
         <div className="flex items-center justify-center">
           <Image src={investor} alt="img" width={1000} height={400} />
+          <h1 className="text-4xl font-semibold text-center">Numerical Status of FPL</h1>
+
         </div>
       </MaxWidthWrapper>
     </section>
