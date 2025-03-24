@@ -15,7 +15,7 @@ const WhyFpl = () => {
           <h1 className="text-2xl md:text-4xl font-semibold ">WHY FLOOR PLANNER LTD !</h1>
           <p className="text-base font-medium mt-4">
 
-We provide clients with space that reflects their brand's image, through an efficient work process that is delivered on time and within budget. With more than 10 years of cumulative experience in the field, Floor Planner Limited is proud to bring its professional approach and exceptional service to the market. We aim to have long-term relationships with clients and therefore never compromise on professionalism, time, and quality.</p>
+We provide clients with space that reflects their brand&lsquo;s image, through an efficient work process that is delivered on time and within budget. With more than 10 years of cumulative experience in the field, Floor Planner Limited is proud to bring its professional approach and exceptional service to the market. We aim to have long-term relationships with clients and therefore never compromise on professionalism, time, and quality.</p>
         </div>
 
      </div>
