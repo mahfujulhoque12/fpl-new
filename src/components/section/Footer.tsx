@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap -mx-4 mb-8">
             <div className="w-full md:w-1/4 px-4 mb-4 md:mb-0">
               <Link href="/">
-                <Image src={logo} alt="" width={250} height={100} />
+                <Image src={logo} alt="" width={250} height={100} className="h-[80px] w-[80px]"   />
               </Link>
               <h5 className="mb-3 text-base text-gray-100 font-bold mt-5">
                 {" "}

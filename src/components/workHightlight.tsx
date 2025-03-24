@@ -43,7 +43,7 @@ const WorkHightlight: React.FC = () => {
                       width={700}
                       height={300}
                       alt="village"
-                      className="rounded-md h-[250px]  object-cover"
+                      className="rounded-md h-[250px] "
                     />
                     <h3 className="text-start text-gray-600 py-1 text-lg font-semibold	">
                       {card.titleTwo}

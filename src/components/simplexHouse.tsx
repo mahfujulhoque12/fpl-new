@@ -51,7 +51,7 @@ Simplex House is a modern, minimalist home designed with clean lines and functio
                     width={700}
                     height={300}
                     alt="village"
-                    className="rounded-md h-[200px]  object-cover"
+                    className="rounded-md h-[200px] "
                   />
                   <h3 className="text-gray-600 text-base font-semibold mt-3">
                     {card.title}

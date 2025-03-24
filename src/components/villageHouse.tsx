@@ -52,7 +52,7 @@ The Village House is a charming and tranquil home nestled in the heart of the co
                     width={700}
                     height={300}
                     alt="village"
-                    className="rounded-md h-[200px] object-cover"
+                    className="rounded-md h-[200px] "
                   />
                   <h3 className=" text-base text-gray-600 font-bold mt-3">
                     {card.title}
