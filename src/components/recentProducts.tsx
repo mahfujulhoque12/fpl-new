@@ -86,7 +86,7 @@ const RecentProducts: React.FC = () => {
                       alt={`Video thumbnail ${index + 1}`}
                       width={700}
                       height={300}
-                      className="rounded-md object-cover w-full"
+                      className="rounded-md h-[200px]"
                     />
                     <div className="absolute top-[45%] left-[45%] w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
                       <FaPlay className="text-white" size={24} />

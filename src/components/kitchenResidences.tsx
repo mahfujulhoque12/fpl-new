@@ -50,7 +50,7 @@ Kitchen Residences is a modern and functional space where culinary creativity me
                     width={700}
                     height={300}
                     alt="village"
-                    className="rounded-md h-[200px]  object-cover"
+                    className="rounded-md h-[250px]"
                   />
                   <h3 className=" text-base text-gray-600 font-bold mt-3">
                     {card.title}

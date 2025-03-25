@@ -111,8 +111,8 @@ const Estimate: React.FC = () => {
                   src={card.imageUrl}
                   alt={card.title}
                   width={500}
-                  height={400}
-                  className="h-[300px] rounded-md object-cover"
+                  height={300}
+                  className="h-[250px] rounded-md"
                 />
               </div>
               <h3 className="text-xl md:text-2xl mt-1 font-semibold text-gray-700">
