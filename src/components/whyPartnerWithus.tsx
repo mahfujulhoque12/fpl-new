@@ -45,7 +45,7 @@ function WhyPartnerWithUs() {
               width={400}
               height={300}
               alt="clinet"
-              className="w-full p-4 bg-white rounded-md  shadow-md h-[200px]"
+              className="w-full p-4 bg-white rounded-md  shadow-md h-[130px] object-contain"
             />
           ))}
         </div>

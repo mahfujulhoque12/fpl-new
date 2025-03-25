@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaSquarePhone } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import Image from "next/image";
-import logo from "/public/footer/footer1.png";
+import logo from "/public/logo/fpl-logo.png";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaYoutubeSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
                   alt=""
                   width={250}
                   height={100}
-                  className="h-[80px] w-[80px]"
+                  className="h-[90px] w-[90px]"
                 />
               </Link>
               <p className="text-sm font-normal text-gray-300 mt-2">
