@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
-import mobileLogo from "/public/footer/footer1.png";
+import mobileLogo from "/public/logo/fpl-logo.png";
 import UserProfile from "./UserProfile";
 import { AlignJustify } from "lucide-react";
 import MegaMenu from "@/components/navbar/MegaMenu";
@@ -36,7 +36,7 @@ const NavigationTwo = ({
   return (
     <header
       className={cn(
-        " top-0 z-50 transition-all duration-300   left-0 h-[80px] border-b border-[#cacaca] w-full bg-black sticky" // Toggle background based on scroll
+        " top-0 z-50 transition-all duration-300   left-0 h-[90px] border-b border-[#cacaca] w-full bg-black sticky" // Toggle background based on scroll
       )}
     >
       <div className="flex items-center justify-between h-[60px] px-8">
@@ -67,7 +67,7 @@ const NavigationTwo = ({
             alt="logo mbl"
             width={200}
             height={200}
-            className="h-[70px] mt-4 w-[80px] object-cover "
+            className="h-[70px] mt-6 w-[80px] object-cover "
           />
         </Link>
 

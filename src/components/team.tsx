@@ -154,7 +154,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -192,7 +192,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -230,7 +230,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -268,7 +268,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -306,7 +306,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -345,7 +345,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
