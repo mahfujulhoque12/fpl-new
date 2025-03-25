@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import es1 from "/public/estimate/Dinning 2.png";
 import es2 from "/public/estimate/Entry 6.png";
-import es3 from "/public/estimate/Living 3.png";
+import es3 from "/public/estimate/fur.png";
 import { motion, useAnimation } from "framer-motion";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -38,7 +38,7 @@ const cardData: CardData[] = [
     title: "Furniture Faculty",
     des: "Our Furniture Faculty section highlights stylish, functional, and innovative furniture designs that enhance any space. We provide expert insights, trend updates, and design inspirations to help you choose the perfect pieces for comfort and aesthetics. Discover timeless and modern furniture solutions tailored to your needs.",
     imageUrl: es3.src,
-    href: "#",
+    href: "/interiors-faculty",
   },
 ];
 
@@ -91,7 +91,7 @@ const Estimate: React.FC = () => {
           Get the estimate for your{" "}
           <motion.span
             animate={controls}
-            className="inline-block text-[#cf4045]"
+            className="inline-block text-gray-900"
           >
             {words[currentIndex]}
           </motion.span>
@@ -124,7 +124,7 @@ const Estimate: React.FC = () => {
                   type="button"
                   onClick={() => handleMoreDetails(card.id, card.href)}
                   disabled={loadingSlug === card.id}
-                  className="gap-2 text-center flex bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                  className="gap-2 text-center flex bg-black px-4 py-1 text-white rounded-md hover:bg-gray-600 transition-all text-sm duration-150"
                 >
                   {loadingSlug === card.id ? (
                     <div className="flex items-center">

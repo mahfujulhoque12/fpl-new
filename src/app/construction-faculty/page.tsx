@@ -8,6 +8,7 @@ import HotelHouse from "@/components/hotelHouse";
 import HouseRanovation from "@/components/houseRanovation";
 import BoundaryRenovation from "@/components/boundaryRenovation";
 import { Metadata } from "next";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 
 export const metadata: Metadata = {
   title: "Construction Faculty",
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <VillageHouse />
       <SimplexHouse />
       <DuplexHouse />

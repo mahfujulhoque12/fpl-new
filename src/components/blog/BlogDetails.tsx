@@ -77,7 +77,7 @@ const BlogDetails: React.FC<ParamsProps> = ({ params }) => {
                     <div>
                       <Link
                         href="/cotesion"
-                        className="text-center bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                        className="text-center  hover:bg-gray-700 bg-black px-4 py-1 text-white rounded-md  transition-all text-sm duration-150"
                       >
                         Get Quotation
                       </Link>
@@ -204,7 +204,7 @@ const BlogDetails: React.FC<ParamsProps> = ({ params }) => {
                     {card.title}
                   </p>
                   <div className="flex justify-end items-center">
-                    <button className="text-center  px-3 py-1 rounded-fullflex items-center text-[#c13136] transition-all text-sm duration-150">
+                    <button className="text-center  px-3 py-1 rounded-fullflex items-center text-gray-600 transition-all text-sm duration-150">
                       <FaArrowRightToBracket size={20} />
                     </button>
                   </div>

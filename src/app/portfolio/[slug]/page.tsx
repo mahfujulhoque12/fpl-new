@@ -1,3 +1,4 @@
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 import PortfolioDetails from "@/components/portfolio/PortfolioDetails";
 import { Metadata } from "next";
 type ParamsProps = {
@@ -14,6 +15,7 @@ export const metadata: Metadata = {
 const page: React.FC<ParamsProps> = ({ params }) => {
   return (
     <div>
+      <NavigationTwo />
       <PortfolioDetails params={params} />
     </div>
   );

@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import {
   Carousel,
@@ -18,12 +18,12 @@ import { cardData } from "@/data/constractionFacalty";
 const DuplexHouse: React.FC = () => {
   const router = useRouter();
 
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const duplexData = cardData.filter((card) => card.id >= 13 && card.id <= 18);
@@ -37,7 +37,10 @@ const DuplexHouse: React.FC = () => {
               Duplex House
             </SubHeading>
             <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-            The Duplex House is a modern and spacious two-story home designed to offer separate living spaces with seamless functionality, providing the perfect balance of privacy and connectivity for families.
+              The Duplex House is a modern and spacious two-story home designed
+              to offer separate living spaces with seamless functionality,
+              providing the perfect balance of privacy and connectivity for
+              families.
             </Paragraph>
           </div>
         </div>
@@ -65,18 +68,18 @@ const DuplexHouse: React.FC = () => {
                   <div className="flex  justify-start  w-full">
                     <button
                       type="button"
-                      className=" gap-2 text-center  flex  bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className=" gap-2 text-center  flex  bg-black px-4 py-1 text-white rounded-md  hover:bg-gray-700 transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : ( 
-                          "Get Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "Get Quote"
+                      )}
                     </button>
                   </div>
                 </div>

@@ -1,3 +1,4 @@
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 import VideoGellary from "@/components/VideoGellary";
 import { Metadata } from "next";
 import React from "react";
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <VideoGellary />
     </div>
   );

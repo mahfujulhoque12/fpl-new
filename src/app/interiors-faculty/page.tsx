@@ -9,6 +9,8 @@ import StoreRoom from "@/components/storeRoom";
 import React from "react";
 import { Metadata } from "next";
 
+import NavigationTwo from "@/components/navbar/NavigationTwo";
+
 export const metadata: Metadata = {
   title: "Interiors Faculty",
   description: "This is interiors faculty page",
@@ -17,6 +19,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+        
+      <NavigationTwo />
       <LivingRoom />
       <BedRoom />
       <KitchenResidences />

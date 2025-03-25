@@ -1,4 +1,5 @@
 import AboutUs from "@/components/aboutUs";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 import Team from "@/components/team";
 import WhyClientChoseUs from "@/components/whyClientChoseUs";
 import { Metadata } from "next";
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <AboutUs />
       <WhyClientChoseUs />
       <Team />

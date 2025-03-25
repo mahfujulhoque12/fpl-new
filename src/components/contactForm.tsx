@@ -103,7 +103,7 @@ const ContactForm = () => {
         <Image
           src={map}
           alt="map"
-          width={500}
+          width={2000}
           height={200}
           className="w-full h-[330px]"
         />

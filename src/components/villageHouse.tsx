@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -18,12 +18,12 @@ import Image from "next/image";
 const VillageHouse = () => {
   const router = useRouter();
 
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const VillageHouseData = cardData.filter(
@@ -36,8 +36,9 @@ const VillageHouse = () => {
           Village House
         </SubHeading>
         <Paragraph className="text-center py-4 w-full md:w-[80%] flex mx-auto">
-        
-The Village House is a charming and tranquil home nestled in the heart of the countryside, offering a cozy retreat that combines rustic charm with modern comfort for a peaceful living experience.
+          The Village House is a charming and tranquil home nestled in the heart
+          of the countryside, offering a cozy retreat that combines rustic charm
+          with modern comfort for a peaceful living experience.
         </Paragraph>
         <Carousel>
           <CarouselContent>
@@ -62,18 +63,18 @@ The Village House is a charming and tranquil home nestled in the heart of the co
                   <div className="flex  justify-start w-full">
                     <button
                       type="button"
-                      className=" gap-2 text-center  flex  bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className=" gap-2 text-center  flex  bg-black px-4 py-1 text-white rounded-md  hover:bg-gray-700 transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : ( 
-                          "Get Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "Get Quote"
+                      )}
                     </button>
                   </div>
                 </div>

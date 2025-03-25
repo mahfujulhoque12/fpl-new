@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -14,18 +14,17 @@ import {
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-
 import { cardData } from "@/data/livingRoomData";
 
 const BedRoom = () => {
   const router = useRouter();
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
 
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const bedRoomCard = cardData.filter((card) => card.id >= 7 && card.id <= 12);
@@ -37,7 +36,9 @@ const BedRoom = () => {
           Bed Room
         </SubHeading>
         <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-        The Bedroom is a personal retreat designed for rest and relaxation, offering a tranquil environment that blends comfort, style, and serenity for a peaceful night &apos;s sleep.
+          The Bedroom is a personal retreat designed for rest and relaxation,
+          offering a tranquil environment that blends comfort, style, and
+          serenity for a peaceful night &apos;s sleep.
         </Paragraph>
         <Carousel>
           <CarouselContent>
@@ -62,11 +63,11 @@ const BedRoom = () => {
                   <div className="flex  justify-start w-full">
                     <button
                       type="button"
-                      className=" gap-2 text-center  flex  bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className=" gap-2 text-center  flex  bg-black px-4 py-1 text-white rounded-md hover:bg-gray-700 transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
                     >
-                       {loadingSlug === card.slug ? ( 
+                      {loadingSlug === card.slug ? (
                         <div className="flex items-center">
                           <span className="loader mr-2" />
                           Loading...

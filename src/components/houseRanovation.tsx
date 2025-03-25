@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -19,14 +19,13 @@ import { cardData } from "@/data/constractionFacalty";
 const HouseRanovation = () => {
   const router = useRouter();
 
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
-
 
   const houseData = cardData.filter((card) => card.id >= 36 && card.id <= 40);
   return (
@@ -36,8 +35,8 @@ const HouseRanovation = () => {
           Bulding Ranovation
         </SubHeading>
         <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-          
-Building Renovation is the process of upgrading and transforming existing spaces to improve functionality, aesthetics, and value.
+          Building Renovation is the process of upgrading and transforming
+          existing spaces to improve functionality, aesthetics, and value.
         </Paragraph>
         <Carousel>
           <CarouselContent>
@@ -62,18 +61,18 @@ Building Renovation is the process of upgrading and transforming existing spaces
                   <div className="flex  justify-start  w-full">
                     <button
                       type="button"
-                      className=" gap-2 text-center  flex  bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
-                       onClick={() => handleMoreDetails(card.slug)}
+                      className=" gap-2 text-center  flex  ] px-4 py-1 text-white rounded-md  hover:bg-gray-700 bg-black transition-all text-sm duration-150"
+                      onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : ( 
-                          "More Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "More Quote"
+                      )}
                     </button>
                   </div>
                 </div>

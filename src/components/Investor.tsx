@@ -1,17 +1,13 @@
 import React from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
-import Image from "next/image";
-import investor from "/public/investor/investor.png";
+
+import Neumerical from "./why-fpl/Neumerical";
 
 const Investor = () => {
   return (
     <section className="py-5 md:py-10">
       <MaxWidthWrapper>
-        <div className="flex items-center justify-center">
-          <Image src={investor} alt="img" width={1000} height={400} />
-          <h1 className="text-4xl font-semibold text-center">Numerical Status of FPL</h1>
-
-        </div>
+        <Neumerical />
       </MaxWidthWrapper>
     </section>
   );
