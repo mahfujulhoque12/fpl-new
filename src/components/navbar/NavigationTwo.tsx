@@ -36,7 +36,7 @@ const NavigationTwo = ({
   return (
     <header
       className={cn(
-        " top-0 z-50 transition-all duration-300   left-0 h-[90px] border-b border-[#cacaca] w-full bg-black sticky" // Toggle background based on scroll
+        " top-0 z-50 transition-all duration-300   left-0 h-[90px]  w-full bg-black sticky" // Toggle background based on scroll
       )}
     >
       <div className="flex items-center justify-between h-[60px] px-8">
