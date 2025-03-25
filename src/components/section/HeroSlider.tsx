@@ -83,7 +83,7 @@ const HeroSlider: React.FC = () => {
               </Paragraph>
               <Link
                 href="/cotesion"
-                className="font-semibold bg-red-600 transition duration-150 hover:bg-red-700 rounded-[27px] px-4 py-2  uppercase"
+                className="font-semibold bg-black transition duration-150 hover:bg-red-700 rounded-[27px] px-4 py-2  uppercase"
               >
                 {slide.action}
               </Link>
@@ -116,7 +116,7 @@ const HeroSlider: React.FC = () => {
                 key={index}
                 className={`h-1 w-5 cursor-pointer ${
                   index === currentSlide
-                    ? "bg-red-600 hover:bg-red-700"
+                    ? "bg-black hover:bg-red-700"
                     : "bg-gray-100"
                 }`}
                 onClick={() => setCurrentSlide(index)}

@@ -27,13 +27,13 @@ const Portfolio = () => {
           Our Portfolio
         </SubHeading>
 
-        <div className="flex items-center gap-4 my-6">
+        <div className="flex items-center justify-center gap-4 my-6">
           {categoryName.map((filter) => (
             <button
               key={filter}
               className={`px-4 py-2 rounded-md ${
                 activeFilter === filter
-                  ? "bg-[#C13136] text-white"
+                  ? "bg-black text-white"
                   : "bg-gray-200 text-gray-700 hover:bg-gray-300"
               } transition-colors duration-200`}
               onClick={() => setActiveFilter(filter)}
@@ -58,7 +58,7 @@ const Portfolio = () => {
                   width={500}
                   height={400}
                   alt="img"
-                  className="w-full h-[300px] object-cover transition-all duration-300 group-hover:opacity-40 rounded-md "
+                  className="w-full h-[300px]  transition-all duration-300 group-hover:opacity-40 rounded-md "
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 flex items-center justify-center">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">

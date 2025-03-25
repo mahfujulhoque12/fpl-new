@@ -1,4 +1,5 @@
 import BlogDetails from "@/components/blog/BlogDetails";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +16,7 @@ type ParamsProps = {
 const Page: React.FC<ParamsProps> = ({ params }) => {
   return (
     <div>
+      <NavigationTwo />
       <BlogDetails params={params} />
     </div>
   );

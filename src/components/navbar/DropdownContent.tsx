@@ -30,7 +30,7 @@ const DropdownContent: React.FC<DropdownContentProps> = ({
       {submenuscontent.map((item, index) => (
         <React.Fragment key={index}>
           <section>
-            <h4 className="font-bold leading-5 mt-3 lg:mt-0 lg:mb-3">
+            <h4 className="font-bold leading-5 mt-3 lg:mt-0 lg:mb-3 text-white">
               {item.heading}
             </h4>
             <ul>
@@ -43,7 +43,10 @@ const DropdownContent: React.FC<DropdownContentProps> = ({
                   }}
                   className="leading-[1.85rem]"
                 >
-                  <Link href={href} className="text-inherit font-normal">
+                  <Link
+                    href={href}
+                    className="text-inherit font-normal text-white"
+                  >
                     {label}
                   </Link>
                 </li>

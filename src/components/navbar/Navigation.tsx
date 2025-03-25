@@ -1,5 +1,5 @@
 "use client";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import mobileLogo from "/public/footer/footer1.png";
 import UserProfile from "./UserProfile";
@@ -7,22 +7,48 @@ import { AlignJustify } from "lucide-react";
 import MegaMenu from "@/components/navbar/MegaMenu";
 import MobileNavigationDrawer from "@/components/navbar/MobileNavigationDrawer";
 import Image from "next/image";
+import { cn } from "@/lib/utilis";
 
 interface MobileMenuOpeningPosition {
   mobileMenuPos?: "left" | "right" | "top" | "bottom";
+  isTransparent?: boolean;
+  className?: string;
 }
 
-const Navigation = ({ mobileMenuPos = "left" }: MobileMenuOpeningPosition) => {
+const Navigation = ({
+  mobileMenuPos = "left",
+  isTransparent,
+  className,
+}: MobileMenuOpeningPosition) => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const drawerButtonRef = useRef(null);
 
+  // Effect to handle scroll and toggle background
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      // Set background to black when scrolled, transparent when at top
+      setIsScrolled(scrollPosition > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <header className="sticky top-0 left-0 z-50 h-[80px] bg-white border-b border-[#cacaca]">
+    <header
+      className={cn(
+        " top-0 z-50 transition-all duration-300   left-0 h-[80px] border-b border-[#cacaca] w-full", // Added sticky positioning and transition
+        isTransparent ? "bg-black" : "",
+        isScrolled ? "bg-black sticky" : "bg-transparent absolute", // Toggle background based on scroll
+        className
+      )}
+    >
       <div className="flex items-center justify-between h-[60px] px-8">
         <div className="flex items-center gap-3 lg:hidden">
           <button
             ref={drawerButtonRef}
-            className="border-none h-[45px] w-[45px] bg-transparent"
+            className="border-none h-[45px] w-[45px] bg-transparent text-white"
             aria-haspopup="true"
             onClick={() => setIsDrawerOpen(true)}
           >

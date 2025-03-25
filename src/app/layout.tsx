@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { poppins } from "@/lib/font";
 import "./globals.css";
-
-import Navigation from "@/components/navbar/Navigation";
 import Footer from "@/components/section/Footer";
 import ContactBtn from "@/components/ContactBtn";
 
@@ -19,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
-        <Navigation />
+        {/* <Navigation /> */}
 
         <ContactBtn />
         {children}

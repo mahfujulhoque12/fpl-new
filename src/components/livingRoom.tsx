@@ -16,13 +16,13 @@ import { cardData } from "@/data/livingRoomData";
 
 const LivingRoom: React.FC = () => {
   const router = useRouter();
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
 
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug); 
+    setLoadingSlug(slug);
     await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null); 
+    setLoadingSlug(null);
   };
 
   const livingRoom = cardData.filter((card) => card.id >= 1 && card.id <= 6);
@@ -34,12 +34,17 @@ const LivingRoom: React.FC = () => {
           Living Room
         </SubHeading>
         <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-      The Living Room is a versatile space designed to bring people together, combining comfort, style, and functionality to create the perfect setting for relaxation, conversation, and entertainment.
+          The Living Room is a versatile space designed to bring people
+          together, combining comfort, style, and functionality to create the
+          perfect setting for relaxation, conversation, and entertainment.
         </Paragraph>
         <Carousel>
           <CarouselContent>
             {livingRoom?.map((card) => (
-              <CarouselItem className="basis-full sm:basis-1/2 md:basis-1/3" key={card.id}>
+              <CarouselItem
+                className="basis-full sm:basis-1/2 md:basis-1/3"
+                key={card.id}
+              >
                 <div className="border p-3 shadow-md mb-2 rounded-lg hover:scale-[102%] transition translate duration-500 h-full flex flex-col">
                   <Image
                     src={card.imageUrl as string}
@@ -56,10 +61,10 @@ const LivingRoom: React.FC = () => {
                     <button
                       type="button"
                       onClick={() => handleMoreDetails(card.slug)}
-                      disabled={loadingSlug === card.slug} 
-                      className="gap-2 text-center flex bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      disabled={loadingSlug === card.slug}
+                      className="gap-2 text-center flex bg-black px-4 py-1 text-white rounded-md hover:bg-gray-700 transition-all text-sm duration-150"
                     >
-                      {loadingSlug === card.slug ? ( 
+                      {loadingSlug === card.slug ? (
                         <div className="flex items-center">
                           <span className="loader mr-2" />
                           Loading...

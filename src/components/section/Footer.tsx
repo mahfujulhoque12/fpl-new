@@ -19,8 +19,20 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap -mx-4 mb-8">
             <div className="w-full md:w-1/4 px-4 mb-4 md:mb-0">
               <Link href="/">
-                <Image src={logo} alt="" width={250} height={100} className="h-[80px] w-[80px]"   />
+                <Image
+                  src={logo}
+                  alt=""
+                  width={250}
+                  height={100}
+                  className="h-[80px] w-[80px]"
+                />
               </Link>
+              <p className="text-sm font-normal text-gray-300 mt-2">
+                FPL is the latest endeavour by bti. We provide a comprehensive
+                solution for both residential and commercial spaces and have
+                four decades of expertise in delivering design and construction
+                services.
+              </p>
               <h5 className="mb-3 text-base text-gray-100 font-bold mt-5">
                 {" "}
                 Follow Us{" "}

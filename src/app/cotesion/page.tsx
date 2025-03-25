@@ -1,10 +1,9 @@
-
-import Cotesion from '@/components/cotesion';
+import Cotesion from "@/components/cotesion";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 const Page = () => {
-
   return (
     <div>
-     
+      <NavigationTwo />
       <Cotesion />
     </div>
   );

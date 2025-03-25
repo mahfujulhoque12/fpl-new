@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -17,13 +17,13 @@ import { cardData } from "@/data/livingRoomData";
 const CorporateOffice = () => {
   const router = useRouter();
 
- const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
 
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const corporateData = cardData.filter(
@@ -37,7 +37,10 @@ const CorporateOffice = () => {
           Corporate Office
         </SubHeading>
         <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-        The Corporate Office is a modern and efficient workspace designed to foster collaboration, productivity, and innovation, offering a professional environment tailored to meet the needs of today’s dynamic business world.
+          The Corporate Office is a modern and efficient workspace designed to
+          foster collaboration, productivity, and innovation, offering a
+          professional environment tailored to meet the needs of today’s dynamic
+          business world.
         </Paragraph>
         <Carousel>
           <CarouselContent>
@@ -61,18 +64,18 @@ const CorporateOffice = () => {
                   <div className="flex justify-start w-full mt-auto">
                     <button
                       type="button"
-                      className="gap-2 text-center flex bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className="gap-2 text-center flex bg-black px-4 py-1 text-white rounded-md  hover:bg-gray-700 transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : (
-                          "Get Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "Get Quote"
+                      )}
                     </button>
                   </div>
                 </div>

@@ -2,7 +2,7 @@ import { useState, useRef, useEffect, KeyboardEvent } from "react";
 import { X } from "lucide-react";
 import MegaMenu from "@/components/navbar/MegaMenu";
 import { cn } from "@/lib/utils";
-import mobileLogo from "/public/fbl-logo.png";
+import mobileLogo from "/public/footer/footer1.png";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -56,7 +56,7 @@ const MobileNavigationDrawer: React.FC<MobileNavigationDrawerProps> = ({
     >
       {isDrawerOpen && (
         <div
-          className="backdrop"
+          className="backdrop "
           onClick={() => {
             setIsDrawerOpen(false);
             // Focus the drawer button when it closes
@@ -69,7 +69,7 @@ const MobileNavigationDrawer: React.FC<MobileNavigationDrawerProps> = ({
 
       <div
         className={cn(
-          "drawer_content bg-white fixed w-full top-0 h-screen z-[99] overflow-y-auto  transition-transform duration-500 select-none",
+          "drawer_content bg-black fixed w-full top-0 h-screen z-[99] overflow-y-auto  transition-transform duration-500 select-none",
           isDrawerOpen ? "active" : "",
           mobileMenuPos == "left" && "left-0 -translate-x-full",
           mobileMenuPos == "right" && "right-0 translate-x-full",
@@ -84,38 +84,40 @@ const MobileNavigationDrawer: React.FC<MobileNavigationDrawerProps> = ({
             mobileMenuPos === "right" && "text-start"
           )}
         >
-
-          <div  className="flex justify-between">
-            <div className="p-2">
-              <Link href="/"  onClick={() => {
-              setIsDrawerOpen(false);
-              // Focus the drawer button when it closes
-              if (drawerButtonRef.current) {
-                drawerButtonRef.current.focus();
-              }
-            }} >
-              <Image src={mobileLogo} alt="logo" width={50} height={50} className="  h-auto object-cover" />
-              </Link>          
+          <div className="flex justify-between">
+            <div className="p-2 ">
+              <Link
+                href="/"
+                onClick={() => {
+                  setIsDrawerOpen(false);
+                  // Focus the drawer button when it closes
+                  if (drawerButtonRef.current) {
+                    drawerButtonRef.current.focus();
+                  }
+                }}
+              >
+                <Image
+                  src={mobileLogo}
+                  alt="logo"
+                  width={50}
+                  height={50}
+                  className="  h-auto object-cover"
+                />
+              </Link>
             </div>
 
             <button
-            onClick={() => {
-              setIsDrawerOpen(false);
-              // Focus the drawer button when it closes
-              if (drawerButtonRef.current) {
-                drawerButtonRef.current.focus();
-              }
-            }}
-           
-          >
-          
-          
-          
-            <X size={30} />
-          </button>
+              onClick={() => {
+                setIsDrawerOpen(false);
+                // Focus the drawer button when it closes
+                if (drawerButtonRef.current) {
+                  drawerButtonRef.current.focus();
+                }
+              }}
+            >
+              <X size={30} />
+            </button>
           </div>
-
-        
         </div>
         <div>
           <MegaMenu

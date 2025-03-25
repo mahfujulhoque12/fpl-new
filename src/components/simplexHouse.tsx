@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "./layout/MaxWidthWrapper";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -19,12 +19,12 @@ import Image from "next/image";
 const SimplexHouse = () => {
   const router = useRouter();
 
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const simplexData = cardData.filter((card) => card.id >= 7 && card.id <= 12);
@@ -35,8 +35,9 @@ const SimplexHouse = () => {
           Simplex House
         </SubHeading>
         <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-          
-Simplex House is a modern, minimalist home designed with clean lines and functional spaces, offering a serene living environment that emphasizes simplicity and comfort.
+          Simplex House is a modern, minimalist home designed with clean lines
+          and functional spaces, offering a serene living environment that
+          emphasizes simplicity and comfort.
         </Paragraph>
         <Carousel>
           <CarouselContent>
@@ -61,18 +62,18 @@ Simplex House is a modern, minimalist home designed with clean lines and functio
                   <div className="flex  justify-start  w-full">
                     <button
                       type="button"
-                      className=" gap-2 text-center  flex  bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className=" gap-2 text-center  flex  bg-black px-4 py-1 text-white rounded-md  hover:bg-gray-700 transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : ( 
-                          "Get Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "Get Quote"
+                      )}
                     </button>
                   </div>
                 </div>

@@ -11,11 +11,13 @@ import HeroSlider from "@/components/section/HeroSlider";
 import FaqAccordion from "@/components/faq/FaqAccordion";
 import CallToAction from "@/components/CallToAction";
 import InteriorHome from "@/components/interiorHome";
+import Navigation from "@/components/navbar/Navigation";
 
 export default function Home() {
   return (
     <>
-      <main>
+      <main className="rlative">
+        <Navigation />
         <HeroSlider />
         <Estimate />
         <InteriorDesigns />

@@ -90,7 +90,7 @@ const MoreVideo: React.FC = () => {
                     height={300}
                     className="rounded-md object-cover  h-[250px]"
                   />
-                  <div className="absolute top-[45%] left-[45%] w-12 h-12 bg-red-600 rounded-full flex items-center justify-center">
+                  <div className="absolute top-[45%] left-[45%] w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center">
                     <FaPlay className="text-white" size={24} />
                   </div>
                   <h3 className="text-gray-600 py-1 text-lg font-semibold	">

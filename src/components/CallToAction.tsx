@@ -5,14 +5,13 @@ import Paragraph from "./typography/Paragraph";
 import SubHeading from "./typography/SubHeading";
 
 const CallToAction = () => {
-
   const router = useRouter();
-  const [loading, setLoading] = useState<boolean>(false); 
+  const [loading, setLoading] = useState<boolean>(false);
   const handleMoreDetails = async () => {
-    setLoading(true); 
-    await new Promise((resolve) => setTimeout(resolve, 500)); 
-    router.push('/cotesion');
-    setLoading(false); 
+    setLoading(true);
+    await new Promise((resolve) => setTimeout(resolve, 500));
+    router.push("/cotesion");
+    setLoading(false);
   };
 
   return (
@@ -24,24 +23,27 @@ const CallToAction = () => {
           </SubHeading>
 
           <Paragraph className="text-white mt-4">
-          Discover a home that perfectly fits your vision and lifestyle. With our expertise in design and attention to detail, we bring your dream home to life effortlessly. Start your journey with us and see how close you are to your ideal living space
+            Discover a home that perfectly fits your vision and lifestyle. With
+            our expertise in design and attention to detail, we bring your dream
+            home to life effortlessly. Start your journey with us and see how
+            close you are to your ideal living space
           </Paragraph>
           <div className="flex  justify-center mt-3 w-full">
-          <button 
-        type="button" 
-        className="sign border-none inline-flex items-center cursor-pointer font-medium text-[14px] text-white bg-[#cf4045] hover:bg-[#c13136]  px-2 py-1 rounded-md ml-4"
-        onClick={handleMoreDetails} 
-        disabled={loading} 
-      >
-        {loading ? (
-          <div className="flex items-center">
-            <span className="loader mr-2" />
-            Loading...
-          </div>
-        ) : (
-          "Get start"
-        )}
-      </button>
+            <button
+              type="button"
+              className="sign border-none inline-flex items-center cursor-pointer font-medium text-[14px] text-white bg-black hover:bg-gray-700  px-2 py-1 rounded-md ml-4"
+              onClick={handleMoreDetails}
+              disabled={loading}
+            >
+              {loading ? (
+                <div className="flex items-center">
+                  <span className="loader mr-2" />
+                  Loading...
+                </div>
+              ) : (
+                "Get start"
+              )}
+            </button>
           </div>
         </div>
       </div>

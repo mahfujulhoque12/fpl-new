@@ -2,6 +2,7 @@ import ContactUs from "@/components/contactUs";
 import ContactForm from "@/components/contactForm";
 import Subscribe from "@/components/subscribe";
 import { Metadata } from "next";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <ContactUs />
       <ContactForm />
       <Subscribe />

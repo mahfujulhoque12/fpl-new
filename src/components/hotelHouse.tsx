@@ -1,5 +1,5 @@
 "use client";
-import React,{useState} from "react";
+import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import {
   Carousel,
@@ -18,12 +18,12 @@ import { cardData } from "@/data/constractionFacalty";
 const HotelHouse: React.FC = () => {
   const router = useRouter();
 
-  const [loadingSlug, setLoadingSlug] = useState<string | null>(null); 
+  const [loadingSlug, setLoadingSlug] = useState<string | null>(null);
   const handleMoreDetails = async (slug: string) => {
-    setLoadingSlug(slug)
-    await new Promise((resolve)=>(setTimeout(resolve,500))) 
+    setLoadingSlug(slug);
+    await new Promise((resolve) => setTimeout(resolve, 500));
     router.push(`/cotesion`);
-    setLoadingSlug(null)
+    setLoadingSlug(null);
   };
 
   const hotelData = cardData.filter((card) => card.id >= 31 && card.id <= 35);
@@ -37,8 +37,10 @@ const HotelHouse: React.FC = () => {
               Hotel House
             </SubHeading>
             <Paragraph className="text-center py-5 w-full md:w-[80%] flex mx-auto">
-              
-The Hotel House offers a blend of comfort and luxury, providing spacious rooms and exceptional service in a welcoming environment, perfect for both business and leisure travelers looking for a memorable stay.
+              The Hotel House offers a blend of comfort and luxury, providing
+              spacious rooms and exceptional service in a welcoming environment,
+              perfect for both business and leisure travelers looking for a
+              memorable stay.
             </Paragraph>
           </div>
         </div>
@@ -66,18 +68,18 @@ The Hotel House offers a blend of comfort and luxury, providing spacious rooms a
                   <div className="flex justify-start w-full">
                     <button
                       type="button"
-                      className="gap-2 text-center flex bg-[#cf4045] px-4 py-1 text-white rounded-md hover:bg-[#c13136] transition-all text-sm duration-150"
+                      className="gap-2 text-center flex  hover:bg-gray-700 bg-black px-4 py-1 text-white rounded-md  transition-all text-sm duration-150"
                       onClick={() => handleMoreDetails(card.slug)}
                       disabled={loadingSlug === card.slug}
-                      >
-                         {loadingSlug === card.slug ? ( 
-                          <div className="flex items-center">
-                            <span className="loader mr-2" />
-                            Loading...
-                          </div>
-                        ) : ( 
-                          "Get Quote"
-                        )}
+                    >
+                      {loadingSlug === card.slug ? (
+                        <div className="flex items-center">
+                          <span className="loader mr-2" />
+                          Loading...
+                        </div>
+                      ) : (
+                        "Get Quote"
+                      )}
                     </button>
                   </div>
                 </div>

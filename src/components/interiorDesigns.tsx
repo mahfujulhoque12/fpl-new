@@ -2,7 +2,13 @@
 import React, { useState } from "react";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import { IoIosArrowForward } from "react-icons/io";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import Image from "next/image";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
@@ -26,14 +32,29 @@ const sliderImages = [
 ];
 
 // Modal Component
-const Modal: React.FC<{ src: string; onClose: () => void }> = ({ src, onClose }) => {
+const Modal: React.FC<{ src: string; onClose: () => void }> = ({
+  src,
+  onClose,
+}) => {
   return (
-    <div onClick={onClose} className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
+    >
       <div className="relative bg-white rounded-lg p-4 max-w-[90%] max-h-[90%]">
-        <button onClick={onClose} className="absolute top-0 right-0 text-gray-600 font-bold text-lg">
+        <button
+          onClick={onClose}
+          className="absolute top-0 right-0 text-gray-600 font-bold text-lg"
+        >
           <IoCloseCircleSharp className="text-red-500" size={20} />
         </button>
-        <Image src={src} alt="Selected image" width={800} height={600} className="rounded-lg w-[700px] h-[400px]" />
+        <Image
+          src={src}
+          alt="Selected image"
+          width={800}
+          height={600}
+          className="rounded-lg w-[700px] h-[400px]"
+        />
       </div>
     </div>
   );
@@ -62,11 +83,15 @@ const InteriorDesigns: React.FC = () => {
               Inspiration for home interior designs
             </SubHeading>
             <Paragraph className="pb-3 text-gray-500">
-              Give your home a new look with these interior design ideas curated for you
+              Give your home a new look with these interior design ideas curated
+              for you
             </Paragraph>
           </div>
           <div className="flex justify-end sm:justify-start">
-            <Link href="/interiors-faculty" className="font-medium text-red-400 flex items-center gap-2">
+            <Link
+              href="/interiors-faculty"
+              className="font-medium text-gray-600 flex items-center gap-2"
+            >
               View All <IoIosArrowForward />
             </Link>
           </div>
@@ -76,7 +101,10 @@ const InteriorDesigns: React.FC = () => {
           <CarouselContent>
             <CarouselItem>
               <div className="flex gap-2 mt-4">
-                <div className="basis-full md:basis-1/2" onClick={() => openModal(sliderImages[0].src)}>
+                <div
+                  className="basis-full md:basis-1/2"
+                  onClick={() => openModal(sliderImages[0].src)}
+                >
                   <Image
                     src={sliderImages[0].src}
                     className="rounded-[5px] h-auto max-h-[180px] cursor-pointer object-cover"
@@ -85,7 +113,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[0].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/3" onClick={() => openModal(sliderImages[1].src)}>
+                <div
+                  className="basis-full lg:basis-1/3"
+                  onClick={() => openModal(sliderImages[1].src)}
+                >
                   <Image
                     src={sliderImages[1].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -94,7 +125,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[1].alt}
                   />
                 </div>
-                <div className="basis-full sm:basis-1/3" onClick={() => openModal(sliderImages[2].src)}>
+                <div
+                  className="basis-full sm:basis-1/3"
+                  onClick={() => openModal(sliderImages[2].src)}
+                >
                   <Image
                     src={sliderImages[2].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -105,7 +139,10 @@ const InteriorDesigns: React.FC = () => {
                 </div>
               </div>
               <div className="flex gap-2 mt-4">
-                <div className="basis-full sm:basis-1/4" onClick={() => openModal(sliderImages[3].src)}>
+                <div
+                  className="basis-full sm:basis-1/4"
+                  onClick={() => openModal(sliderImages[3].src)}
+                >
                   <Image
                     src={sliderImages[3].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -114,7 +151,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[3].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/2" onClick={() => openModal(sliderImages[4].src)}>
+                <div
+                  className="basis-full lg:basis-1/2"
+                  onClick={() => openModal(sliderImages[4].src)}
+                >
                   <Image
                     src={sliderImages[4].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer object-cover"
@@ -123,7 +163,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[4].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/4" onClick={() => openModal(sliderImages[5].src)}>
+                <div
+                  className="basis-full lg:basis-1/4"
+                  onClick={() => openModal(sliderImages[5].src)}
+                >
                   <Image
                     src={sliderImages[5].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -136,7 +179,10 @@ const InteriorDesigns: React.FC = () => {
             </CarouselItem>
             <CarouselItem>
               <div className="flex gap-2 mt-4">
-                <div className="basis-full md:basis-1/2" onClick={() => openModal(sliderImages[6].src)}>
+                <div
+                  className="basis-full md:basis-1/2"
+                  onClick={() => openModal(sliderImages[6].src)}
+                >
                   <Image
                     src={sliderImages[6].src}
                     className="rounded-[5px] h-auto max-h-[180px] cursor-pointer object-cover"
@@ -145,7 +191,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[6].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/3" onClick={() => openModal(sliderImages[7].src)}>
+                <div
+                  className="basis-full lg:basis-1/3"
+                  onClick={() => openModal(sliderImages[7].src)}
+                >
                   <Image
                     src={sliderImages[7].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -154,7 +203,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[7].alt}
                   />
                 </div>
-                <div className="basis-full sm:basis-1/3" onClick={() => openModal(sliderImages[8].src)}>
+                <div
+                  className="basis-full sm:basis-1/3"
+                  onClick={() => openModal(sliderImages[8].src)}
+                >
                   <Image
                     src={sliderImages[8].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -165,7 +217,10 @@ const InteriorDesigns: React.FC = () => {
                 </div>
               </div>
               <div className="flex gap-2 mt-4">
-                <div className="basis-full sm:basis-1/4" onClick={() => openModal(sliderImages[9].src)}>
+                <div
+                  className="basis-full sm:basis-1/4"
+                  onClick={() => openModal(sliderImages[9].src)}
+                >
                   <Image
                     src={sliderImages[9].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"
@@ -174,7 +229,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[9].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/2" onClick={() => openModal(sliderImages[10].src)}>
+                <div
+                  className="basis-full lg:basis-1/2"
+                  onClick={() => openModal(sliderImages[10].src)}
+                >
                   <Image
                     src={sliderImages[10].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer object-cover"
@@ -183,7 +241,10 @@ const InteriorDesigns: React.FC = () => {
                     alt={sliderImages[10].alt}
                   />
                 </div>
-                <div className="basis-full lg:basis-1/4" onClick={() => openModal(sliderImages[11].src)}>
+                <div
+                  className="basis-full lg:basis-1/4"
+                  onClick={() => openModal(sliderImages[11].src)}
+                >
                   <Image
                     src={sliderImages[11].src}
                     className="rounded-[5px] max-h-[180px] h-auto cursor-pointer"

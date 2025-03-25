@@ -4,6 +4,7 @@ import MoreReview from "@/components/moreReview";
 import MoreVideo from "@/components/moreVideo";
 import RecentProducts from "@/components/recentProducts";
 import WorkHightlight from "@/components/workHightlight";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 
 export const metadata: Metadata = {
   title: "Fpl Updates",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <OthersPic />
       <MoreReview />
       <WorkHightlight />

@@ -57,29 +57,31 @@ const Review: React.FC = () => {
             Check out some of our customer reviews
           </SubHeading>
 
-         <div className="flex justify-end sm:justify-start">
-           <Link href ="/others-faculty"
-            className="font-medium text-red-400 flex items-center gap-2"
-          >
-            View All <IoIosArrowForward />
-          </Link>
+          <div className="flex justify-end sm:justify-start">
+            <Link
+              href="/others-faculty"
+              className="font-medium text-gray-600 flex items-center gap-2"
+            >
+              View All <IoIosArrowForward />
+            </Link>
           </div>
         </div>
 
         <Carousel className=" mt-10 md:mt-20">
           <CarouselContent className="">
             {cardData.map((card) => (
-              <CarouselItem key={card.id} className="basis-full sm:basis-1/2 lg:basis-1/3">
+              <CarouselItem
+                key={card.id}
+                className="basis-full sm:basis-1/2 lg:basis-1/3"
+              >
                 <div
                   className="relative shadow-sm p-6 border rounded-lg hover:shadow-md transition-shadow duration-300 bg-cover bg-center bg-no-repeat mb-2"
                   style={{
                     backgroundImage: `url(${card.imageUrl})`,
                   }}
                 >
-             
                   <div className="absolute inset-0 bg-black bg-opacity-50 rounded-lg z-0" />
 
-          
                   <div className="relative p-4 rounded-md z-10">
                     <div className="flex justify-center text-yellow-400 gap-2 text-xl">
                       <FaStar />

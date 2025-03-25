@@ -4,6 +4,7 @@ import WhyPartnerWithus from "@/components/whyPartnerWithus";
 import Investor from "@/components/Investor";
 import Cabinet from "@/components/Cabinet";
 import { Metadata } from "next";
+import NavigationTwo from "@/components/navbar/NavigationTwo";
 
 export const metadata: Metadata = {
   title: "Why Fpl",
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div>
+      <NavigationTwo />
       <WhyFpl />
       <Cabinet />
       <WhyChoseUs />
