@@ -18,6 +18,8 @@ const Portfolio = () => {
     activeFilter === "all" ? true : img.type === activeFilter
   );
 
+  const categoryName = ["all", "interior", "construction"];
+
   return (
     <MaxWidthWrapper>
       <div className="my-16">
@@ -25,8 +27,10 @@ const Portfolio = () => {
           Our Portfolio
         </SubHeading>
 
-        <div className="flex items-center justify-center gap-4 my-6">
-          {["all", "interior", "construction"].map((filter) => (
+
+        <div className="flex items-center gap-4 my-6">
+
+
             <button
               key={filter}
               className={`px-4 py-2 rounded-md ${
@@ -60,7 +64,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 flex items-center justify-center">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
-                   {img.project}
+                    {img.project}
                   </span>
                 </div>
               </button>
