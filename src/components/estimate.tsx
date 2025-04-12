@@ -4,11 +4,12 @@ import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import es1 from "/public/estimate/Dinning 2.png";
-import es2 from "/public/estimate/Entry 6.png";
-import es3 from "/public/estimate/fur.png";
+
+import es3 from "/public/estimate/es33.png";
 import { motion, useAnimation } from "framer-motion";
 import SubHeading from "./typography/SubHeading";
 import Paragraph from "./typography/Paragraph";
+import pic212 from "/public/portfolio/fac1.png";
 
 type CardData = {
   id: number;
@@ -30,7 +31,7 @@ const cardData: CardData[] = [
     id: 2,
     title: "Construction Faculty",
     des: "Our Construction Faculty section focuses on innovative building techniques, structural excellence, and sustainable construction practices. We provide expert insights, project showcases, and the latest industry trends to ensure durable and efficient structures. Explore our resources to build with confidence and precision.",
-    imageUrl: es2.src,
+    imageUrl: pic212.src,
     href: "/construction-faculty",
   },
   {

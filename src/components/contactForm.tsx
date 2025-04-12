@@ -12,7 +12,6 @@ import Link from "next/link";
 import Image from "next/image";
 import fromImg from "/public/contact/contact2.png";
 
-import map from "/public/contact/map.png";
 import ContactFormInfo from "./contactFormInfo";
 
 const ContactForm = () => {
@@ -100,13 +99,19 @@ const ContactForm = () => {
 
       {/* map */}
       <div className="mt-10">
-        <Image
+        {/* <Image
           src={map}
           alt="map"
           width={2000}
           height={200}
           className="w-full h-[330px]"
-        />
+        /> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.337741003992!2d90.41985527605864!3d23.77098458798447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7eb02fa9ccf%3A0x3d5c5ff9187c8f79!2z4Kas4KeH4Ka44Ka_4KaVIOCmsuCmvuCmleCnhyDgpq3gpr_gpok!5e0!3m2!1sbn!2sbd!4v1744431021992!5m2!1sbn!2sbd"
+          allowFullScreen
+          loading="lazy"
+          className="w-full h-[400px]"
+        ></iframe>
       </div>
     </section>
   );

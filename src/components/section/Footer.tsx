@@ -11,6 +11,7 @@ import { FaYoutubeSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitterSquare } from "react-icons/fa";
 
+
 const Footer: React.FC = () => {
   return (
     <footer className=" bg-[#000000] text-black footer_">
@@ -28,7 +29,7 @@ const Footer: React.FC = () => {
                 />
               </Link>
               <p className="text-sm font-normal text-gray-300 mt-2">
-                FPL is the latest endeavour by bti. We provide a comprehensive
+                FPL is the latest endeavour by Fpl. We provide a comprehensive
                 solution for both residential and commercial spaces and have
                 four decades of expertise in delivering design and construction
                 services.
