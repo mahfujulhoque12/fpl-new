@@ -12,6 +12,9 @@ import pic10 from "/public/clients/10.png";
 import pic11 from "/public/clients/11.png";
 import pic12 from "/public/clients/12.png";
 import pic13 from "/public/clients/13.png";
+import pic14 from "/public/clients/14.png";
+import pic15 from "/public/clients/15.png";
+import pic16 from "/public/clients/16.png";
 
 import Image from "next/image";
 
@@ -30,6 +33,9 @@ function WhyPartnerWithUs() {
     pic11,
     pic12,
     pic13,
+    pic14,
+    pic15,
+    pic16,
   ];
   return (
     <section className="py-10 md:py-15">

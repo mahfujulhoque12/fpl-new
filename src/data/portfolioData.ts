@@ -7,7 +7,7 @@ import pic4 from "/public/portfolio/nazia4.png";
 
 import pic5 from "/public/portfolio/nazia5.png";
 import pic6 from "/public/portfolio/nazia6.png";
-import pic7 from "/public/portfolio/nazia7.png";
+
 import pic8 from "/public/portfolio/nazia8.png";
 import pic9 from "/public/portfolio/nazia9.png";
 import pic10 from "/public/portfolio/nazia10.png";
@@ -96,50 +96,50 @@ import pic80 from "/public/portfolio/aziz35.png";
 import pic81 from "/public/portfolio/aziz36.png";
 // end aziz
 
-import pic82 from "/public/portfolio/cm1.png";
-import pic83 from "/public/portfolio/cm2.png";
-import pic84 from "/public/portfolio/cm3.png";
+// import pic82 from "/public/portfolio/cm1.png";
+// import pic83 from "/public/portfolio/cm2.png";
+// import pic84 from "/public/portfolio/cm3.png";
 
-import pic93 from "/public/portfolio/cm4.png";
-import pic89 from "/public/portfolio/cm5.png";
-import pic90 from "/public/portfolio/cm6.png";
-import pic91 from "/public/portfolio/cm7.png";
-import pic92 from "/public/portfolio/cm8.png";
-import pic94 from "/public/portfolio/cm9.png";
-import pic95 from "/public/portfolio/cm10.png";
-import pic96 from "/public/portfolio/cm11.png";
-import pic97 from "/public/portfolio/cm12.png";
-import pic98 from "/public/portfolio/cm13.png";
-import pic99 from "/public/portfolio/cm14.png";
-import pic100 from "/public/portfolio/cm15.png";
-import pic101 from "/public/portfolio/cm16.png";
-import pic102 from "/public/portfolio/cm17.png";
-import pic103 from "/public/portfolio/cm18.png";
-import pic104 from "/public/portfolio/cm19.png";
-import pic105 from "/public/portfolio/cm20.png";
-import pic106 from "/public/portfolio/cm21.png";
-import pic107 from "/public/portfolio/cm22.png";
-import pic108 from "/public/portfolio/cm23.png";
-import pic109 from "/public/portfolio/cm24.png";
-import pic110 from "/public/portfolio/cm25.png";
-import pic111 from "/public/portfolio/cm26.png";
-import pic112 from "/public/portfolio/cm27.png";
-import pic113 from "/public/portfolio/cm28.png";
-import pic114 from "/public/portfolio/cm28.png";
-import pic115 from "/public/portfolio/cm28.png";
-import pic116 from "/public/portfolio/cm29.png";
-import pic117 from "/public/portfolio/cm30.png";
-import pic118 from "/public/portfolio/cm31.png";
-import pic119 from "/public/portfolio/cm32.png";
-import pic120 from "/public/portfolio/cm33.png";
-import pic121 from "/public/portfolio/cm34.png";
-import pic122 from "/public/portfolio/cm35.png";
-import pic123 from "/public/portfolio/cm36.png";
-import pic124 from "/public/portfolio/cm37.png";
-import pic125 from "/public/portfolio/cm38.png";
-import pic126 from "/public/portfolio/cm39.png";
-import pic127 from "/public/portfolio/cm40.png";
-import pic128 from "/public/portfolio/cm41.png";
+// import pic93 from "/public/portfolio/cm4.png";
+// import pic89 from "/public/portfolio/cm5.png";
+// import pic90 from "/public/portfolio/cm6.png";
+// import pic91 from "/public/portfolio/cm7.png";
+// import pic92 from "/public/portfolio/cm8.png";
+// import pic94 from "/public/portfolio/cm9.png";
+// import pic95 from "/public/portfolio/cm10.png";
+// import pic96 from "/public/portfolio/cm11.png";
+// import pic97 from "/public/portfolio/cm12.png";
+// import pic98 from "/public/portfolio/cm13.png";
+// import pic99 from "/public/portfolio/cm14.png";
+// import pic100 from "/public/portfolio/cm15.png";
+// import pic101 from "/public/portfolio/cm16.png";
+// import pic102 from "/public/portfolio/cm17.png";
+// import pic103 from "/public/portfolio/cm18.png";
+// import pic104 from "/public/portfolio/cm19.png";
+// import pic105 from "/public/portfolio/cm20.png";
+// import pic106 from "/public/portfolio/cm21.png";
+// import pic107 from "/public/portfolio/cm22.png";
+// import pic108 from "/public/portfolio/cm23.png";
+// import pic109 from "/public/portfolio/cm24.png";
+// import pic110 from "/public/portfolio/cm25.png";
+// import pic111 from "/public/portfolio/cm26.png";
+// import pic112 from "/public/portfolio/cm27.png";
+// import pic113 from "/public/portfolio/cm28.png";
+// import pic114 from "/public/portfolio/cm28.png";
+// import pic115 from "/public/portfolio/cm28.png";
+// import pic116 from "/public/portfolio/cm29.png";
+// import pic117 from "/public/portfolio/cm30.png";
+// import pic118 from "/public/portfolio/cm31.png";
+// import pic119 from "/public/portfolio/cm32.png";
+// import pic120 from "/public/portfolio/cm33.png";
+// import pic121 from "/public/portfolio/cm34.png";
+// import pic122 from "/public/portfolio/cm35.png";
+// import pic123 from "/public/portfolio/cm36.png";
+// import pic124 from "/public/portfolio/cm37.png";
+// import pic125 from "/public/portfolio/cm38.png";
+// import pic126 from "/public/portfolio/cm39.png";
+// import pic127 from "/public/portfolio/cm40.png";
+// import pic128 from "/public/portfolio/cm41.png";
 // end cm recedence baridara'
 
 import pic129 from "/public/portfolio/ctg-club1.png";
@@ -278,18 +278,24 @@ export const images = [
     img: pic1,
 
     slug: createSlug("frist image slug"),
-    imgs: [pic14, pic2, pic3, pic4, pic5, pic6],
+    imgs: [
+      pic14,
+      pic2,
+      pic3,
+      pic4,
+      pic5,
+      pic6,
+      pic8,
+      pic9,
+      pic10,
+      pic11,
+      pic12,
+      pic13,
+    ],
     type: "interior",
     project: "NAZIA (PVT)LTD",
   },
-  {
-    id: 2,
-    img: pic7,
-    slug: createSlug("sec image slug"),
-    imgs: [pic8, pic9, pic10, pic11, pic12, pic13],
-    type: "interior",
-    project: "NAZIA (PVT)LTD",
-  },
+
   {
     id: 3,
     img: pic16,
@@ -312,17 +318,21 @@ export const images = [
     id: 5,
     img: pic23,
     slug: createSlug("five image slug"),
-    imgs: [pic23, pic24, pic25, pic26, pic27, pic28],
+    imgs: [
+      pic23,
+      pic24,
+      pic25,
+      pic26,
+      pic27,
+      pic28,
+      pic29,
+      pic30,
+      pic31,
+      pic32,
+      pic40,
+      pic32,
+    ],
     type: "construction",
-    project: "ARITISAN CTG OUTLET",
-  },
-
-  {
-    id: 6,
-    img: pic29,
-    slug: createSlug("six image slug"),
-    imgs: [pic29, pic30, pic31, pic32, pic40, pic32],
-    type: "interior",
     project: "ARITISAN CTG OUTLET",
   },
 
@@ -330,15 +340,20 @@ export const images = [
     id: 7,
     img: pic33,
     slug: createSlug("seven image slug"),
-    imgs: [pic33, pic34, pic35, pic36, pic37, pic38],
-    type: "interior",
-    project: "Ayub khan_3D",
-  },
-  {
-    id: 8,
-    img: pic39,
-    slug: createSlug("eight image slug"),
-    imgs: [pic39, pic41, pic42, pic43, pic44, pic45],
+    imgs: [
+      pic33,
+      pic34,
+      pic35,
+      pic36,
+      pic37,
+      pic38,
+      pic39,
+      pic41,
+      pic42,
+      pic43,
+      pic44,
+      pic45,
+    ],
     type: "interior",
     project: "Ayub khan_3D",
   },
@@ -347,130 +362,133 @@ export const images = [
     id: 9,
     img: pic46,
     slug: createSlug("nine image slug"),
-    imgs: [pic46, pic47, pic48, pic49, pic50, pic51],
+    imgs: [
+      pic46,
+      pic47,
+      pic48,
+      pic49,
+      pic50,
+      pic51,
+      pic52,
+      pic53,
+      pic54,
+      pic55,
+      pic56,
+      pic57,
+      pic58,
+      pic59,
+      pic60,
+      pic61,
+      pic62,
+      pic63,
+      pic64,
+      pic65,
+      pic66,
+      pic67,
+      pic68,
+      pic69,
+      pic70,
+      pic71,
+      pic72,
+      pic73,
+      pic74,
+      pic75,
+      pic1014,
+      pic42,
+      pic43,
+      pic44,
+      pic45,
+      pic46,
+      pic76,
+      pic77,
+      pic78,
+      pic79,
+      pic80,
+      pic81,
+    ],
     type: "interior",
     project: "Aziz Group-RESIDENTIAL",
   },
-  {
-    id: 10,
-    img: pic52,
-    slug: createSlug("ten image slug"),
-    imgs: [pic52, pic53, pic54, pic55, pic56, pic57],
-    type: "construction",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 11,
-    img: pic58,
-    slug: createSlug("eleven image slug"),
-    imgs: [pic58, pic59, pic60, pic61, pic62, pic63],
-    type: "interior",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 12,
-    img: pic64,
-    slug: createSlug("twelve image slug"),
-    imgs: [pic64, pic65, pic66, pic67, pic68, pic69],
-    type: "interior",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 13,
-    img: pic70,
-    slug: createSlug("thirteen image slug"),
-    imgs: [pic70, pic71, pic72, pic73, pic74, pic75],
-    type: "interior",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 14,
-    img: pic41,
-    slug: createSlug("fourteen image slug"),
-    imgs: [pic1014, pic42, pic43, pic44, pic45, pic46],
-    type: "interior",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 15,
-    img: pic76,
-    slug: createSlug("fiveteen image slug"),
-    imgs: [pic76, pic77, pic78, pic79, pic80, pic81],
-    type: "interior",
-    project: "Aziz Group-RESIDENTIAL",
-  },
-  {
-    id: 16,
-    img: pic82,
-    slug: createSlug("sixteen image slug"),
-    imgs: [pic82, pic83, pic84, pic89, pic90, pic91],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 17,
-    img: pic92,
-    slug: createSlug("seventeen image slug"),
-    imgs: [pic92, pic93, pic94, pic95, pic96, pic97],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 18,
-    img: pic98,
-    slug: createSlug("eightteen image slug"),
-    imgs: [pic98, pic99, pic100, pic101, pic102, pic103],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 19,
-    img: pic104,
-    slug: createSlug("nineteen image slug"),
-    imgs: [pic104, pic105, pic106, pic107, pic108, pic109],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 20,
-    img: pic110,
-    slug: createSlug("tweenty image slug"),
-    imgs: [pic110, pic111, pic112, pic113, pic114, pic115],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 21,
-    img: pic116,
-    slug: createSlug("tweentyone image slug"),
-    imgs: [pic116, pic117, pic118, pic119, pic120, pic121],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
-  {
-    id: 22,
-    img: pic122,
-    slug: createSlug("tweentytwo image slug"),
-    imgs: [pic128, pic123, pic124, pic125, pic126, pic127],
-    type: "interior",
-    project: "CM Residence_BARIDHARA",
-  },
+
+  // {
+  //   id: 16,
+  //   img: pic82,
+  //   slug: createSlug("sixteen image slug"),
+  //   imgs: [pic82, pic83, pic84, pic89, pic90, pic91],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 17,
+  //   img: pic92,
+  //   slug: createSlug("seventeen image slug"),
+  //   imgs: [pic92, pic93, pic94, pic95, pic96, pic97],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 18,
+  //   img: pic98,
+  //   slug: createSlug("eightteen image slug"),
+  //   imgs: [pic98, pic99, pic100, pic101, pic102, pic103],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 19,
+  //   img: pic104,
+  //   slug: createSlug("nineteen image slug"),
+  //   imgs: [pic104, pic105, pic106, pic107, pic108, pic109],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 20,
+  //   img: pic110,
+  //   slug: createSlug("tweenty image slug"),
+  //   imgs: [pic110, pic111, pic112, pic113, pic114, pic115],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 21,
+  //   img: pic116,
+  //   slug: createSlug("tweentyone image slug"),
+  //   imgs: [pic116, pic117, pic118, pic119, pic120, pic121],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
+  // {
+  //   id: 22,
+  //   img: pic122,
+  //   slug: createSlug("tweentytwo image slug"),
+  //   imgs: [pic128, pic123, pic124, pic125, pic126, pic127],
+  //   type: "interior",
+  //   project: "CM Residence_BARIDHARA",
+  // },
   {
     id: 23,
     img: pic129,
     slug: createSlug("tweentythree image slug"),
-    imgs: [pic129, pic130, pic131, pic132, pic133, pic134],
+    imgs: [
+      pic129,
+      pic130,
+      pic131,
+      pic132,
+      pic133,
+      pic135,
+      pic134,
+      pic136,
+      pic137,
+      pic138,
+      pic139,
+      pic136,
+      pic132,
+    ],
     type: "interior",
     project: "CTG Club_3D",
   },
-  {
-    id: 24,
-    img: pic135,
-    slug: createSlug("tweentyfour image slug"),
-    imgs: [pic136, pic137, pic138, pic139, pic136, pic132],
-    type: "interior",
-    project: "CTG Club_3D",
-  },
+
   {
     id: 25,
     img: pic140,
@@ -500,51 +518,59 @@ export const images = [
     id: 28,
     img: pic153,
     slug: createSlug("tweentyeight image slug"),
-    imgs: [pic153, pic154, pic155, pic156, pic157, pic158],
+    imgs: [
+      pic153,
+      pic154,
+      pic155,
+      pic156,
+      pic157,
+      pic158,
+      pic159,
+      pic160,
+      pic161,
+      pic162,
+      pic163,
+      pic159,
+    ],
     type: "interior",
     project: "Dhanmondi residence ",
   },
-  {
-    id: 29,
-    img: pic159,
-    slug: createSlug("tweentynine image slug"),
-    imgs: [pic159, pic160, pic161, pic162, pic163, pic159],
-    type: "interior",
-    project: "Dhanmondi residence ",
-  },
+
   // dr hasan
   {
     id: 30,
     img: pic165,
     slug: createSlug("thirty image slug"),
-    imgs: [pic165, pic166, pic167, pic168, pic169, pic170],
+    imgs: [
+      pic165,
+      pic166,
+      pic167,
+      pic168,
+      pic169,
+      pic170,
+      pic171,
+      pic172,
+      pic173,
+      pic174,
+      pic175,
+      pic176,
+      pic177,
+      pic178,
+      pic179,
+      pic180,
+      pic181,
+      pic182,
+      pic183,
+      pic184,
+      pic185,
+      pic186,
+      pic170,
+      pic178,
+    ],
     type: "interior",
     project: "Dr. S. A. Hassan",
   },
-  {
-    id: 31,
-    img: pic171,
-    slug: createSlug("thirtyone image slug"),
-    imgs: [pic171, pic172, pic173, pic174, pic175, pic176],
-    type: "interior",
-    project: "Dr. S. A. Hassan",
-  },
-  {
-    id: 32,
-    img: pic177,
-    slug: createSlug("thirtytwo image slug"),
-    imgs: [pic177, pic178, pic179, pic180, pic181, pic182],
-    type: "interior",
-    project: "Dr. S. A. Hassan",
-  },
-  {
-    id: 33,
-    img: pic183,
-    slug: createSlug("thirtythree image slug"),
-    imgs: [pic183, pic184, pic185, pic186, pic170, pic178],
-    type: "interior",
-    project: "Dr. S. A. Hassan",
-  },
+
   // dr hasan end
 
   // elite club
@@ -552,18 +578,24 @@ export const images = [
     id: 34,
     img: pic187,
     slug: createSlug("thirtyfour image slug"),
-    imgs: [pic187, pic188, pic189, pic190, pic191, pic192],
+    imgs: [
+      pic187,
+      pic188,
+      pic189,
+      pic190,
+      pic191,
+      pic192,
+      pic193,
+      pic194,
+      pic195,
+      pic196,
+      pic197,
+      pic187,
+    ],
     type: "interior",
     project: "ELITE ALLIANCE CLUB",
   },
-  {
-    id: 35,
-    img: pic193,
-    slug: createSlug("thirtyfive image slug"),
-    imgs: [pic193, pic194, pic195, pic196, pic197, pic187],
-    type: "interior",
-    project: "ELITE ALLIANCE CLUB",
-  },
+
   // elite club end
   // eng zia
   {
@@ -600,17 +632,23 @@ export const images = [
     id: 39,
     img: pic216,
     slug: createSlug("thirtynine image slug"),
-    imgs: [pic216, pic217, pic218, pic219, pic220, pic221],
+    imgs: [
+      pic216,
+      pic217,
+      pic218,
+      pic219,
+      pic220,
+      pic221,
+      pic222,
+      pic224,
+      pic223,
+      pic217,
+      pic220,
+      pic221,
+    ],
     type: "construction",
     project: "Farjana Afroz_3D ",
   },
-  {
-    id: 40,
-    img: pic222,
-    slug: createSlug("fourty image slug"),
-    imgs: [pic222, pic224, pic223, pic217, pic220, pic221],
-    type: "construction",
-    project: "Farjana Afroz_3D ",
-  },
+
   // farjana end
 ];

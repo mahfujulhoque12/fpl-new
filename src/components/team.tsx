@@ -12,7 +12,7 @@ import man7 from "/public/team/Md. Sohorab Hossen.jpg";
 import man8 from "/public/team/Arch. Roksana.jpg";
 import man9 from "/public/team/Md Rafiq.jpg";
 import man10 from "/public/team/Hafij.jpg";
-import man11 from "/public/team/Nazmul Hassan.jpg";
+
 import man12 from "/public/team/Afnan.jpg";
 import man13 from "/public/team/Ms Rubaya Sultana Piya.jpg";
 import man14 from "/public/team/nadia.png";
@@ -23,6 +23,7 @@ type CardData = {
   imageUrl: string;
   name?: string;
   title?: string;
+  subTitle?: string;
 };
 const cardDataOne: CardData[] = [
   {
@@ -30,12 +31,16 @@ const cardDataOne: CardData[] = [
     imageUrl: man1.src,
     name: "Md  Mainul Islam",
     title: "Managing Director",
+    subTitle:
+      "Mainul Islam has recently been appointed as Managing Director of Floor Planner Ltd (FPL). He is also one of the founder member of this company. Prior to joining FPL, He has served with several renowned organizations in the countery in various key positions of category & supply chain management like OTOBI Ltd, bti, unilliance Group and P2P engineering & constructions Ltd. He was accorded with the ' Executive of Innovation' for his enormous ingenious contribution in those organizations. During his fifteen year career, he was a devoted soul mate of the institutions having vast experience in the relavent field of procuring, budgeting, cost analysis, market exploration, strategic business planning and execution , its procedure as well as he is recognized as ' Material Master'. He is an ardent promoter of the concept of material invention. He has completed Master of Business Administration (MBA) & Master of Arts (M.A) in Bengali. He is writing enthusiastic & published in several daily & weekly journals. He has attended various training courses & workshops in the field of marketing tactics. He has travelled to India and Nepal in connection with the business. He was born in a noble Muslim family. He has a happy family with his wife, a lovely daughter & son.",
   },
   {
     id: 2,
     imageUrl: man2.src,
     name: "Muhummad Shajed Alam Mujumder",
     title: "Director",
+    subTitle:
+      "Muhammad Shajed Alam Mazumder, a true visionary and a driving force in the corporate world, has ascended to the position of Director at Floor Planner Ltd. (FPL), a company he co-founded. With a remarkable career spanning eighteen years, he has consistently excelled in leading sales and customer relationship management roles across renowned organizations in the country. His illustrious journey includes significant contributions to STUDIO45, partex group, Sanmar properties Ltd, P2P Engineering & Construction Ltd, and bti. In the dynamic landscape of business, he has left an indelible mark, having served both local, and multinational giants such as NOVARTIS Bangladesh, Warid Telecom, Envoy Group, The Daily Prothom Alo, UCBL, Brac Bank, ROBI, Bangla Link, ACI Godrej, Independent University, BRAC University, ICDDRB, SMC, and many more. His expertise and passion for marketing shine through with an MBA in Marketing from the esteemed University of ASA. Beyond borders, Shajed`s quest for excellence has taken him to India and Nepal in connection with his business endeavors. Hailing from a noble Muslim family, he embodies values that drive success with integrity. His happiness knows no bounds with a loving family by his side- a cherished wife, a delightful daughter, and a promising son. He is synonymous with dedication, innovation, and success in the business world.",
   },
   {
     id: 3,
@@ -112,13 +117,6 @@ const cardDataSix: CardData[] = [
   },
 
   {
-    id: 11,
-    imageUrl: man11.src,
-    name: "Md Nazmul Hassan",
-    title: "Sr. Executive, sales & marketing ",
-  },
-
-  {
     id: 14,
     imageUrl: man14.src,
     name: "Nadia Hasan",
@@ -154,7 +152,7 @@ const Team = () => {
                   alt="img"
                   width={200}
                   height={200}
-                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-1"
+                  className="w-full h-[300px] transition-all duration-300 group-hover:opacity-40 rounded-md object-contain p-3"
                 />
                 <div className="absolute inset-x-0 bottom-0 h-0 bg-black group-hover:h-full transition-all duration-300 flex items-center justify-center px-5">
                   <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
@@ -164,6 +162,12 @@ const Team = () => {
                     <h4 className="text-center py-1 text-normal text-white">
                       {card.title}
                     </h4>
+
+                    {card.subTitle && (
+                      <div className="text-xs text-gray-300 font-normal overflow-y-auto pr-2 h-[200px] scroll-thin scroll-thumb-gray-400 scroll-track-gray-700">
+                        {card.subTitle}
+                      </div>
+                    )}
                   </span>
                 </div>
               </div>
