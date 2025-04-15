@@ -96,6 +96,12 @@ const videoData: VideoData[] = [
     title: "আধুনিক ইন্টেরিয়র ডিজাইন কেমন হাওয়া উচিত...",
     des: "Click the video and explore more about the interiors design",
   },
+  {
+    url: "https://www.youtube.com/embed/bgprf5SS2Gk",
+    thumbnail: "/thumb/santa.png",
+    title: "SHANTA ZEN",
+    des: "Click the video and explore more about the interiors design",
+  },
 ];
 
 const VideoGallery: React.FC = () => {
