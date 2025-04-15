@@ -16,6 +16,12 @@ type VideoData = {
 
 const videoData: VideoData[] = [
   {
+    url: "https://www.youtube.com/embed/bgprf5SS2Gk",
+    thumbnail: "/thumb/santa.png",
+    title: "SHANTA ZEN",
+    des: "Click the video and explore more about the interiors design",
+  },
+  {
     url: "https://www.youtube.com/embed/tKjvVf0a50c",
 
     thumbnail: "/thumb/thumb1.png",
@@ -94,12 +100,6 @@ const videoData: VideoData[] = [
     url: "https://www.youtube.com/embed/oXLrV04-caA",
     thumbnail: "/thumb/thumb13.png",
     title: "আধুনিক ইন্টেরিয়র ডিজাইন কেমন হাওয়া উচিত...",
-    des: "Click the video and explore more about the interiors design",
-  },
-  {
-    url: "https://www.youtube.com/embed/bgprf5SS2Gk",
-    thumbnail: "/thumb/santa.png",
-    title: "SHANTA ZEN",
     des: "Click the video and explore more about the interiors design",
   },
 ];
