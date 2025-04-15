@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import es1 from "/public/estimate/Dinning 2.png";
+import es1 from "/public/estimate/4.jpg";
 
 import es3 from "/public/estimate/es33.png";
 import { motion, useAnimation } from "framer-motion";

@@ -47,6 +47,8 @@ const cardDataOne: CardData[] = [
     imageUrl: man3.src,
     name: "Md Mozammel Hoque",
     title: "Executive Director",
+    subTitle:
+      "Md. Mozammel Haque. Born in a Muslim noble family in Shariatpur district. His father was a teacher. He joined the world-renowned furniture company OTOBI Limited as his first job and worked in various departments at OTOBI for 10 years. He got the opportunity to work with Nitun Kundu, the father of office furniture for a long time. After working at OTOBI, he joined Navana Furniture Limited, a well-established group in Bangladesh, as a founding member. After working for 5 years, he worked with furniture materials. And consulted some established furniture companies in Bangladesh. Later, he set up a business called Liveart Plus. He started importing furniture-related products from abroad. He started establishing connections by importing furniture parts and furniture hardware and started supplying to various big furniture companies in Bangladesh. Which is still going on. Mr. Mozammel Haque joined Floor Planner Limited as an Executive Director in September 2023.  He has traveled to various countries including India, China, Malaysia, Singapore, Dubai, Sri Lanka, Saudi Arabia for business. He is particularly experienced in furniture materials. He has worked as the head of procurement department in various furniture companies for a long time.He has passed B.A. from Tejgaon College, Dhaka. He has participated in various meetings and seminars on furniture materials.In his personal life, he is the father of 3 children.",
   },
 ];
 
