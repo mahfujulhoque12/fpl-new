@@ -400,7 +400,6 @@ import rb8 from "/public/rb/8.jpg";
 import sz1 from "/public/sz/1.jpg";
 import sz2 from "/public/sz/2.jpg";
 import sz3 from "/public/sz/3.jpg";
-import sz4 from "/public/sz/4.jpg";
 import sz5 from "/public/sz/5.jpg";
 import sz6 from "/public/sz/6.jpg";
 import sz7 from "/public/sz/7.jpg";
@@ -1209,7 +1208,6 @@ export const images = [
       sz1,
       sz2,
       sz3,
-      sz4,
       sz5,
       sz6,
       sz7,
