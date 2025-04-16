@@ -135,7 +135,7 @@ const Team = () => {
             Our Team
           </SubHeading>
           <h2 className="text-2xl font-semibold text-black mt-5 text-center">
-            Management Team
+            The Command Unit
           </h2>
 
           <div className="my-5 gap-5 flex justify-center items-center">
