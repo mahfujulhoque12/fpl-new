@@ -102,6 +102,12 @@ const videoData: VideoData[] = [
     title: "আধুনিক ইন্টেরিয়র ডিজাইন কেমন হাওয়া উচিত...",
     des: "Click the video and explore more about the interiors design",
   },
+  {
+    url: "https://www.youtube.com/embed/v9PYyWOXH0M",
+    thumbnail: "/thumb/hanif.png",
+    title: "Md Hanif ",
+    des: "Click the video and explore more about the interiors design",
+  },
 ];
 
 const VideoGallery: React.FC = () => {
