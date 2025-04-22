@@ -43,7 +43,8 @@ const Portfolio = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8">
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-8"> */}
+        <div className="columns-1 sm:columns-2 md:columns-3 lg:columns-4 gap-5 mt-8 space-y-5">
           {filteredImage.map((img) => (
             <div
               key={img.id}
@@ -58,10 +59,10 @@ const Portfolio = () => {
                   width={500}
                   height={400}
                   alt="img"
-                  className="w-full h-[300px]  transition-all duration-300 group-hover:opacity-40 rounded-md "
+                  className="w-full h-[100%]   transition-all duration-300 group-hover:opacity-40 rounded-md "
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300 uppercase">
+                  <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300 uppercase px-4">
                     {img.project}
                   </span>
                 </div>

@@ -303,6 +303,23 @@ import kiw16 from "/public/kiw/16.jpg";
 import kiw17 from "/public/kiw/17.jpg";
 import kiw18 from "/public/kiw/18.jpg";
 
+import meg1 from "/public/kiw/meg1.jpg";
+import meg2 from "/public/kiw/meg2.jpg";
+import meg3 from "/public/kiw/meg3.jpg";
+import meg4 from "/public/kiw/meg4.jpg";
+import meg5 from "/public/kiw/meg5.jpg";
+import meg6 from "/public/kiw/meg6.jpg";
+import meg7 from "/public/kiw/meg7.jpg";
+import meg8 from "/public/kiw/meg8.jpg";
+import meg9 from "/public/kiw/meg9.jpg";
+import meg10 from "/public/kiw/meg10.jpg";
+import meg11 from "/public/kiw/meg11.jpg";
+import meg12 from "/public/kiw/meg12.jpg";
+import meg13 from "/public/kiw/meg13.jpg";
+import meg14 from "/public/kiw/meg14.jpg";
+import meg15 from "/public/kiw/meg15.jpg";
+import meg16 from "/public/kiw/meg16.jpg";
+
 import kabir1 from "/public/kabir/1.jpg";
 import kabir2 from "/public/kabir/2.jpg";
 import kabir3 from "/public/kabir/3.jpg";
@@ -1077,9 +1094,25 @@ export const images = [
       kiw16,
       kiw17,
       kiw18,
+      meg1,
+      meg2,
+      meg3,
+      meg4,
+      meg5,
+      meg6,
+      meg7,
+      meg8,
+      meg9,
+      meg10,
+      meg11,
+      meg12,
+      meg13,
+      meg14,
+      meg15,
+      meg16,
     ],
     type: "interior",
-    project: "Kaalmegh Interior work",
+    project: "Kaalmegha",
   },
 
   {
