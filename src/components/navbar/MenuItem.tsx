@@ -1,9 +1,11 @@
+"use client";
+
 import MaxWidthWrapper from "@/components/layout/MaxWidthWrapper";
 import DropdownContent from "./DropdownContent";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
+import { useRef } from "react";
 
-// Define types for the component props
 interface SubmenuItem {
   label: string;
   href: string;
@@ -18,10 +20,10 @@ interface NestedMenu {
 interface MenuItemProps {
   label: string;
   href: string;
-  nestedMenu?: NestedMenu[]; // Optional, as some items might not have a submenu
-  onToggle?: () => void; // Optional, used for toggling dropdown
-  active: boolean; // Whether the item is active or not
-  setIsDrawerOpen?: (isOpen: boolean) => void; // Optional, to control the drawer state
+  nestedMenu?: NestedMenu[];
+  onToggle?: () => void;
+  active: boolean;
+  setIsDrawerOpen?: (isOpen: boolean) => void;
 }
 
 const MenuItem: React.FC<MenuItemProps> = ({
@@ -33,28 +35,55 @@ const MenuItem: React.FC<MenuItemProps> = ({
   setIsDrawerOpen,
 }) => {
   const router = useRouter();
+  const pathname = usePathname();
+  const isScrolling = useRef(false);
 
-  const pathname = usePathname(); // Get the current pathname
-
-  // Corrected active check to prevent "Home" from always being active
   const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      isScrolling.current = true;
+      element.scrollIntoView({ behavior: "smooth" });
+
+      setTimeout(() => {
+        isScrolling.current = false;
+      }, 600);
+    } else {
+      setTimeout(() => scrollToSection(id), 200);
+    }
+  };
+
   const handleClick = async (href: string, scrollToId?: string) => {
     setIsDrawerOpen?.(false);
 
-    if (pathname !== href) {
-      await router.push(href);
-    }
+    const currentPath = pathname;
+    const targetPath = href;
 
-    if (scrollToId) {
-      const tryScroll = () => {
-        const el = document.getElementById(scrollToId);
-        if (el) {
-          el.scrollIntoView({ behavior: "smooth" });
-        } else {
-          setTimeout(tryScroll, 200);
-        }
-      };
-      tryScroll();
+    const waitForScrollTargetAndScroll = (id: string, attempt = 0) => {
+      if (attempt > 10) return;
+
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState(null, "", `${targetPath}#${id}`);
+      } else {
+        setTimeout(() => waitForScrollTargetAndScroll(id, attempt + 1), 200);
+      }
+    };
+
+    if (currentPath === targetPath) {
+      if (scrollToId) {
+        scrollToSection(scrollToId);
+        window.history.replaceState(null, "", `${targetPath}#${scrollToId}`);
+      }
+    } else {
+      if (scrollToId) {
+        await router.push(targetPath);
+        waitForScrollTargetAndScroll(scrollToId);
+      } else {
+        await router.push(targetPath);
+      }
     }
   };
 
@@ -64,11 +93,12 @@ const MenuItem: React.FC<MenuItemProps> = ({
         <button
           className={`${
             isActive ? " border-b-2 border-white font-semibold" : "text-white"
-          } text-inherit text-white  w-full text-[14.5px] font-medium px-4 flex items-center lg:px-[0.7rem]`}
+          } text-inherit text-white w-full text-[14.5px] font-medium px-4 flex items-center lg:px-[0.7rem]`}
           onClick={() => handleClick(href)}
         >
           {label}
         </button>
+
         {nestedMenu && (
           <button
             className="px-3 border-none bg-white flex items-center lg:hidden"
@@ -81,6 +111,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           </button>
         )}
       </div>
+
       {nestedMenu && (
         <div
           role="menu"
