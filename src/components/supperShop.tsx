@@ -30,7 +30,7 @@ const SupperShop = () => {
     (card) => card.id >= 38 && card.id <= 44
   );
   return (
-    <section className="py-10 md:py-15">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="supperShop">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           {" "}

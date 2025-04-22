@@ -740,7 +740,7 @@ export const images = [
       pic45,
     ],
     type: "interior",
-    project: "Ayub khan_3D",
+    project: "Ayub khan",
   },
 
   {
@@ -815,7 +815,7 @@ export const images = [
       pic132,
     ],
     type: "interior",
-    project: "CTG Club_3D",
+    project: "CTG Club",
   },
 
   {
@@ -833,7 +833,7 @@ export const images = [
     slug: createSlug("tweentysix image slug"),
     imgs: [pic143, pic144, pic145, pic146, pic147, pic148],
     type: "construction",
-    project: "CUET_3D views",
+    project: "CUET",
   },
   {
     id: 27,
@@ -943,7 +943,7 @@ export const images = [
     slug: createSlug("thirtyseven image slug"),
     imgs: [pic211, pic206, pic207, pic208, pic209, pic210],
     type: "interior",
-    project: "EXCEL TECNOLOGY_3D",
+    project: "EXCEL TECNOLOGY",
   },
   // exel end
   // fac
@@ -976,7 +976,7 @@ export const images = [
       pic221,
     ],
     type: "construction",
-    project: "Farjana Afroz_3D ",
+    project: "Farjana Afroz",
   },
   {
     id: 40,

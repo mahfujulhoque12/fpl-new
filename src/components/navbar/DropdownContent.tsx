@@ -5,19 +5,20 @@ import Link from "next/link";
 interface SubmenuItem {
   label: string;
   href: string;
+  scrollToId?: string;
 }
 
 // Define the type for the content of each submenu
-interface SubmenuContent {
+interface NestedMenu {
   heading: string;
   submenu: SubmenuItem[];
 }
 
 // Define the props for the DropdownContent component
 interface DropdownContentProps {
-  submenuscontent: SubmenuContent[];
-  setIsDrawerOpen?: (isOpen: boolean) => void; // Optional function to set drawer state
-  handleClick: () => void; // Function to handle click events
+  submenuscontent: NestedMenu[];
+  setIsDrawerOpen?: (isOpen: boolean) => void;
+  handleClick: (href: string, scrollToId?: string) => void;
 }
 
 const DropdownContent: React.FC<DropdownContentProps> = ({
@@ -34,12 +35,12 @@ const DropdownContent: React.FC<DropdownContentProps> = ({
               {item.heading}
             </h4>
             <ul>
-              {item.submenu.map(({ label, href }, index) => (
+              {item.submenu.map(({ label, href, scrollToId }, index) => (
                 <li
                   key={index}
                   onClick={() => {
                     if (setIsDrawerOpen) setIsDrawerOpen(false);
-                    handleClick();
+                    handleClick(href, scrollToId);
                   }}
                   className="leading-[1.85rem]"
                 >

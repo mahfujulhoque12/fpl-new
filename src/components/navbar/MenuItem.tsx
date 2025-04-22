@@ -7,6 +7,7 @@ import { usePathname, useRouter } from "next/navigation";
 interface SubmenuItem {
   label: string;
   href: string;
+  scrollToId?: string;
 }
 
 interface NestedMenu {
@@ -37,15 +38,24 @@ const MenuItem: React.FC<MenuItemProps> = ({
 
   // Corrected active check to prevent "Home" from always being active
   const isActive = href === "/" ? pathname === href : pathname.startsWith(href);
-  const handleClick = () => {
-    const activeElement = document.activeElement as HTMLElement | null;
-    activeElement?.blur();
-  };
-
-  const handleLinkClick = async () => {
+  const handleClick = async (href: string, scrollToId?: string) => {
     setIsDrawerOpen?.(false);
-    handleClick();
-    router.push(href);
+
+    if (pathname !== href) {
+      await router.push(href);
+    }
+
+    if (scrollToId) {
+      const tryScroll = () => {
+        const el = document.getElementById(scrollToId);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        } else {
+          setTimeout(tryScroll, 200);
+        }
+      };
+      tryScroll();
+    }
   };
 
   return (
@@ -55,7 +65,7 @@ const MenuItem: React.FC<MenuItemProps> = ({
           className={`${
             isActive ? " border-b-2 border-white font-semibold" : "text-white"
           } text-inherit text-white  w-full text-[14.5px] font-medium px-4 flex items-center lg:px-[0.7rem]`}
-          onClick={handleLinkClick}
+          onClick={() => handleClick(href)}
         >
           {label}
         </button>

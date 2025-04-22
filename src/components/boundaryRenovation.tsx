@@ -31,7 +31,7 @@ const BoundaryRenovation: React.FC = () => {
   );
 
   return (
-    <section className="py-10">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="boundaryRenovation">
       <MaxWidthWrapper>
         <div className="">
           <div className="mb-4 sm:mb-0">

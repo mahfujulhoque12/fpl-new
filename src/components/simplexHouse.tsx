@@ -29,7 +29,7 @@ const SimplexHouse = () => {
 
   const simplexData = cardData.filter((card) => card.id >= 7 && card.id <= 12);
   return (
-    <section className="py-10 md:py-15">
+    <section  className="py-10 md:py-15 scroll-mt-24 " id="simplexHouse">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Simplex House

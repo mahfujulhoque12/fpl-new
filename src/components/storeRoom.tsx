@@ -28,7 +28,7 @@ const StoreRoom = () => {
 
   const storeData = cardData.filter((card) => card.id >= 45 && card.id <= 51);
   return (
-    <section className="py-10 md:py-15">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="storeRoom">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           {" "}

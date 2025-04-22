@@ -4,6 +4,7 @@ import MenuItem from "@/components/navbar/MenuItem";
 interface SubmenuItem {
   label: string;
   href: string;
+  scrollToId?: string;
 }
 
 // Define the type for each nested menu section
@@ -16,6 +17,7 @@ interface NestedMenu {
 interface MenuDataItem {
   label: string;
   href: string;
+  scrollToId?: string;
   nestedMenu?: NestedMenu[]; // Optional because not all menu items have nested menus
 }
 
@@ -33,21 +35,32 @@ const menuData: MenuDataItem[] = [
           {
             label: "Living Room",
             href: "/interiors-faculty",
+            scrollToId: "livingRoom",
           },
-          { label: "Bed Room", href: "/interiors-faculty" },
+          {
+            label: "Bed Room",
+            href: "/interiors-faculty",
+            scrollToId: "bedRoom",
+          },
         ],
       },
       {
         heading: "Interiors",
         submenu: [
-          { label: "Kitchen Residences", href: "/interiors-faculty" },
+          {
+            label: "Kitchen Residences",
+            href: "/interiors-faculty",
+            scrollToId: "kitchinResidence",
+          },
           {
             label: "Kitchen Commercial",
             href: "/interiors-faculty",
+            scrollToId: "kitchinCommercial",
           },
           {
             label: "Store Room",
             href: "/interiors-faculty",
+            scrollToId: "storeRoom",
           },
         ],
       },
@@ -57,11 +70,17 @@ const menuData: MenuDataItem[] = [
           {
             label: "Corporate Office",
             href: "/interiors-faculty",
+            scrollToId: "corporateOffice",
           },
-          { label: "Office Reception", href: "/interiors-faculty" },
+          {
+            label: "Office Reception",
+            href: "/interiors-faculty",
+            scrollToId: "officeReciption",
+          },
           {
             label: "Supper Shop",
             href: "/interiors-faculty",
+            scrollToId: "supperShop",
           },
         ],
       },
@@ -74,30 +93,57 @@ const menuData: MenuDataItem[] = [
       {
         heading: "Construction",
         submenu: [
-          { label: "Village House", href: "/construction-faculty" },
+          {
+            label: "Village House",
+            href: "/construction-faculty",
+
+            scrollToId: "villageHouse",
+          },
           {
             label: "Simplex House",
             href: "/construction-faculty",
+            scrollToId: "simplexHouse",
           },
-          { label: "Duplex House", href: "/construction-faculty" },
+          {
+            label: "Duplex House",
+            href: "/construction-faculty",
+            scrollToId: "duplexHouse",
+          },
         ],
       },
       {
         heading: "Construction",
         submenu: [
-          { label: "Multi Storied House", href: "/construction" },
+          {
+            label: "Multi Storied House",
+            href: "/construction-faculty",
+            scrollToId: "multiStoriedHouse",
+          },
           {
             label: "Resort",
             href: "/construction-faculty",
+            scrollToId: "resort",
           },
-          { label: "Hotel House", href: "/construction" },
+          {
+            label: "Hotel House",
+            href: "/construction-faculty",
+            scrollToId: "hotelHouse",
+          },
         ],
       },
       {
         heading: "Construction",
         submenu: [
-          { label: "Bulding Ranovation", href: "/construction" },
-          { label: "Bulding Ranovation", href: "/construction-faculty" },
+          {
+            label: "Bulding  Ranovation",
+            href: "/construction-faculty",
+            scrollToId: "houseRanovation",
+          },
+          {
+            label: "Boundary  Ranovation",
+            href: "/construction-faculty",
+            scrollToId: "boundaryRenovation",
+          },
         ],
       },
     ],

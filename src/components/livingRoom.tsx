@@ -28,7 +28,7 @@ const LivingRoom: React.FC = () => {
   const livingRoom = cardData.filter((card) => card.id >= 1 && card.id <= 6);
 
   return (
-    <section className="py-10 md:py-15">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="livingRoom">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Living Room

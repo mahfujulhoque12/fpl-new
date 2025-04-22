@@ -6,10 +6,10 @@ import man1 from "/public/team/Managing Director.jpg";
 import man2 from "/public/team/director.jpg";
 import man3 from "/public/team/pic3.jpg";
 import man4 from "/public/team/pic4.jpg";
-import man5 from "/public/team/pic5.jpg";
+import man5 from "/public/team/cut.jpg";
 import man6 from "/public/team/Forhad.jpg";
 import man7 from "/public/team/Md. Sohorab Hossen.jpg";
-import man8 from "/public/team/Arch. Roksana.jpg";
+import man8 from "/public/team/arc.jpg";
 import man9 from "/public/team/Md Rafiq.jpg";
 import man10 from "/public/team/Hafij.jpg";
 
