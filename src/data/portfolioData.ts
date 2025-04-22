@@ -1090,7 +1090,7 @@ export const images = [
       kiw12,
       kiw13,
       kiw14,
-
+      kelw1, kelw2, kelw3, kelw4, kelw5, kelw6,
       kiw16,
       kiw17,
       kiw18,
@@ -1403,14 +1403,7 @@ export const images = [
     project: "ICAB Library",
   },
 
-  {
-    id: 61,
-    img: kelw1,
-    slug: createSlug("sixtyOne image slug"),
-    imgs: [kelw1, kelw2, kelw3, kelw4, kelw5, kelw6],
-    type: "interior",
-    project: "Kaalmegh exterior landscaping work",
-  },
+
   {
     id: 62,
     img: mr1,
