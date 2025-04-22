@@ -28,7 +28,7 @@ const Resort = () => {
 
   const resortData = cardData.filter((card) => card.id >= 25 && card.id <= 30);
   return (
-    <section className="py-10 md:py-15">
+    <section  className="py-10 md:py-15 scroll-mt-24 " id="resort">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Resort

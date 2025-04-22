@@ -30,7 +30,7 @@ const OfficeReception = () => {
     (card) => card.id >= 31 && card.id <= 37
   );
   return (
-    <section className="py-10 md:py-15">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="officeReciption">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           {" "}

@@ -28,7 +28,7 @@ const KitchenResidences = () => {
   const kitchenCard = cardData.filter((card) => card.id >= 13 && card.id <= 18);
 
   return (
-    <section className="py-10 md:py-15">
+    <section  className="py-10 md:py-15 scroll-mt-24 " id="kitchinResidence">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Kitchen Residences

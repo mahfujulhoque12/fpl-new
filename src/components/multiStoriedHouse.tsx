@@ -30,7 +30,7 @@ const MultiStoriedHouse = () => {
   const multiData = cardData.filter((card) => card.id >= 19 && card.id <= 24);
 
   return (
-    <section className="py-10 md:py-15">
+    <section  className="py-10 md:py-15 scroll-mt-24 " id="multiStoriedHouse">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Multi Storied House

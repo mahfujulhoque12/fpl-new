@@ -29,7 +29,7 @@ const HotelHouse: React.FC = () => {
   const hotelData = cardData.filter((card) => card.id >= 31 && card.id <= 35);
 
   return (
-    <section className="py-10 md:py-15">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="hotelHouse">
       <MaxWidthWrapper>
         <div className="">
           <div className="mb-4 sm:mb-0">

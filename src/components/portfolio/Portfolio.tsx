@@ -61,7 +61,7 @@ const Portfolio = () => {
                   className="w-full h-[300px]  transition-all duration-300 group-hover:opacity-40 rounded-md "
                 />
                 <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 flex items-center justify-center">
-                  <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <span className="text-cyan-400 text-sm font-normal opacity-0 group-hover:opacity-100 transition-all duration-300 uppercase">
                     {img.project}
                   </span>
                 </div>

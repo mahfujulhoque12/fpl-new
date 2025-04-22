@@ -30,7 +30,7 @@ const BedRoom = () => {
   const bedRoomCard = cardData.filter((card) => card.id >= 7 && card.id <= 12);
 
   return (
-    <section className="py-0 md:py-10 ">
+    <section className="py-10 md:py-15 scroll-mt-24 " id="bedRoom">
       <MaxWidthWrapper>
         <SubHeading className="text-center text-gray-600 font-bold uppercase">
           Bed Room
