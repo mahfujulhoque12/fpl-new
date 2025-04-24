@@ -536,7 +536,6 @@ import kelw2 from "/public/kelw/2.jpg";
 import kelw3 from "/public/kelw/3.jpg";
 import kelw4 from "/public/kelw/4.jpg";
 import kelw5 from "/public/kelw/5.jpg";
-import kelw6 from "/public/kelw/6.jpg";
 
 import mr1 from "/public/mr/1.png";
 import mr2 from "/public/mr/2.png";
@@ -1090,7 +1089,11 @@ export const images = [
       kiw12,
       kiw13,
       kiw14,
-      kelw1, kelw2, kelw3, kelw4, kelw5, kelw6,
+      kelw1,
+      kelw2,
+      kelw3,
+      kelw4,
+      kelw5,
       kiw16,
       kiw17,
       kiw18,
@@ -1402,7 +1405,6 @@ export const images = [
     type: "interior",
     project: "ICAB Library",
   },
-
 
   {
     id: 62,

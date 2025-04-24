@@ -9,8 +9,7 @@ import man4 from "/public/team/pic4.jpg";
 import man5 from "/public/team/cut.jpg";
 import man6 from "/public/team/Forhad.jpg";
 import man7 from "/public/team/Md. Sohorab Hossen.jpg";
-import man8 from "/public/team/arc.jpg";
-import man9 from "/public/team/Md Rafiq.jpg";
+
 import man10 from "/public/team/Hafij.jpg";
 
 import man12 from "/public/team/Afnan.jpg";
@@ -52,14 +51,6 @@ const cardDataOne: CardData[] = [
   },
 ];
 
-const cardDataTwo: CardData[] = [
-  {
-    id: 9,
-    imageUrl: man9.src,
-    name: "Md Rafiq Islam",
-    title: " Senior Manager, HR & Admin",
-  },
-];
 const cardDataThree: CardData[] = [
   {
     id: 13,
@@ -96,13 +87,6 @@ const cardDataFour: CardData[] = [
   },
 ];
 const cardDataFive: CardData[] = [
-  {
-    id: 8,
-    imageUrl: man8.src,
-    name: "Ms Roksana Sultana",
-    title: "Architect",
-  },
-
   {
     id: 12,
     imageUrl: man12.src,
@@ -177,7 +161,7 @@ const Team = () => {
           </div>
         </div>
         {/* sec part */}
-        <div>
+        {/* <div>
           <h2 className="text-2xl font-semibold text-black mt-5 text-center">
             HR Admin
           </h2>
@@ -213,7 +197,7 @@ const Team = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
         {/* third part */}
         <div>
           <h2 className="text-2xl font-semibold text-black mt-5 text-center">
