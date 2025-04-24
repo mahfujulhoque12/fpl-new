@@ -31,7 +31,7 @@ const PortfolioDetails: React.FC<ParamsProps> = ({ params }) => {
       </SubHeading>
 
       {/* Row 1: Images 1 and 2 */}
-      <div className="flex flex-col sm:flex-row gap-5 mt-10">
+      {/* <div className="flex flex-col sm:flex-row gap-5 mt-10">
         {datas.imgs.slice(0, 2).map((img, index) => (
           <Image
             key={index}
@@ -39,13 +39,13 @@ const PortfolioDetails: React.FC<ParamsProps> = ({ params }) => {
             width={500}
             height={400}
             alt={`img-${index}`}
-            className="rounded-md shadow-md w-full max-h-[400px] border object-cover"
+            className="rounded-md shadow-md w-full max-h-[400px]  border "
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Row 2: Image 3 */}
-      <div className="w-full">
+      {/* <div className="w-full">
         {datas.imgs.slice(2, 3).map((img, index) => (
           <Image
             key={index + 2}
@@ -53,13 +53,13 @@ const PortfolioDetails: React.FC<ParamsProps> = ({ params }) => {
             width={500}
             height={400}
             alt={`img-${index + 2}`}
-            className="my-8 rounded-md shadow-md w-full max-h-[600px] border object-cover"
+            className="my-8 rounded-md shadow-md w-full max-h-[600px] border "
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Row 3: Image 4 */}
-      <div className="w-full">
+      {/* <div className="w-full">
         {datas.imgs.slice(3, 4).map((img, index) => (
           <Image
             key={index + 3}
@@ -67,21 +67,21 @@ const PortfolioDetails: React.FC<ParamsProps> = ({ params }) => {
             width={500}
             height={400}
             alt={`img-${index + 3}`}
-            className="rounded-md shadow-md w-full max-h-[600px] border object-cover"
+            className="rounded-md shadow-md w-full max-h-[600px] border "
           />
         ))}
-      </div>
+      </div> */}
 
       {/* Row 4: Images 5 and 6 */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-5 mb-10">
-        {datas.imgs.slice(4).map((img, index) => (
+      <div className=" columns-1 sm:columns-2 gap-5 mt-5 mb-10 space-y-5">
+        {datas.imgs.map((img, index) => (
           <Image
             key={index + 4}
             src={img}
             width={500}
             height={400}
             alt={`img-${index + 4}`}
-            className="rounded-md shadow-md w-full object-cover border max-h-[400px]"
+            className="rounded-md shadow-md w-full  border "
           />
         ))}
       </div>
